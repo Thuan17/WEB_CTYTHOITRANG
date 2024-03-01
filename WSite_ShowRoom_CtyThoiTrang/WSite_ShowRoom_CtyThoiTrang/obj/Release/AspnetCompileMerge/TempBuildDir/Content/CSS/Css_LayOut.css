@@ -1,0 +1,165 @@
+﻿body {
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+* {
+}
+
+.super_container {
+    background-color: white;
+}
+
+#slideshow {
+    padding: 1%;
+    text-align: center;
+    overflow: hidden;
+    height: 500px;
+    width: 1008px;
+    margin: 0 auto;
+}
+
+.slide-wrapper {
+    width: 3912px;
+    -webkit-animation: slide 14s ease infinite;
+}
+
+.slide {
+    display: flex;
+    float: left;
+    height: 500px;
+    width: 1008px;
+}
+
+
+@-webkit-keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+
+    30% {
+        margin-left: -1008px;
+    }
+
+    50% {
+        margin-left: -1008px;
+    }
+
+    60% {
+        margin-left: -2000px;
+    }
+
+    80% {
+        margin-left: -2000px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.dong1 {
+    padding-top: 10px;
+    box-shadow: 2px 1rem 0.75rem rgba(0, 0, 0, .05);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-around;
+    justify-items: center;
+    background-color: #D8D8D8;
+}
+
+.nav-1 {
+    position: relative;
+}
+
+.nav-2 {
+    display: none;
+    position: absolute;
+    left: -40px;
+    z-index: 999;
+}
+
+.nav-main li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-main li {
+    list-style-type: none;
+    margin-right: 70px;
+}
+
+.nav-1:hover .nav-2 {
+    display: block;
+}
+
+.nav-2 li a {
+    color: black;
+    display: block;
+    padding: 12px 80px 12px 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+/*-------------------*/
+/*edit color navigation here*/
+.nav-2 li {
+    background-color: #A9A9A9;
+    padding: 0px;
+    width: 250px;
+}
+
+    .nav-2 li:hover a {
+        background-color: #696969;
+    }
+/*--------------------*/
+
+.card-deck .card {
+    min-width: 250px;
+}
+
+.box-shadow {
+    box-shadow: 14px 0rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.logo a {
+    font-size: 24px;
+    color: #1e1e27;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.super_container {
+    width: 100%;
+    overflow: hidden;
+}
+
+#thunho {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+    .nav-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #thunho {
+        display: block;
+    }
+
+    #khung {
+        display: none;
+    }
+}

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_ProductDetai>
+
+@if (Model != null)
+{
+    foreach (var item in Model)
+    {
+
+
+        <table class="table">
+            <tr>
+                @if (item.Size == 1)
+                {
+                    <td class="text-right">Size:S</td>
+                }
+                else if (item.Size == 2)
+                {
+                    <td class="text-right">Size:M</td>
+                }
+                else if (item.Size == 3)
+                {
+                    <td class="text-right">Size:Xl</td>
+                }
+                <td class="text-right"><span>Số lượng: @item.Quantity</span></td>
+                <td class="text-right">
+                    <a href="#" class="btnAddToCart123   " style="text-decoration:none; color:red" data-id="@item.ProductDetai">
+                        <span><i class="fas fa-cart-plus" style="color:red"></i> Thêm vào giỏ hàng</span>
+                    </a>
+                </td>
+            </tr>
+
+        </table>
+
+    }
+}
+else
+{
+    <h5 class="btn ">
+        Hết hàng
+    </h5>
+}

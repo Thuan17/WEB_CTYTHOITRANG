@@ -1,0 +1,148 @@
+﻿
+@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_Order>
+
+
+
+
+<div class="">
+    <div class="row">
+        <div class="col-xl-12">
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+
+
+                    <p>@item.Code</p>
+
+                    <div class="card border shadow-none IdOrder" id="@item.OrderId">
+                        <div class="card-body">
+                            @Html.Action("Partail_TrangThaiDonHang", "User", new { id = item.OrderId })
+
+                            @Html.Action("Par_OrderDetailSuccess", "User", new { id = item.OrderId })
+                            <div>
+                                <div class="row" data-id="@item.OrderId">
+                                    <div class="col-md-4">
+                                        <div class="mt-3">
+                                            @*<p class="text-muted mb-2">Price</p>
+                                                <h5 class="mb-0 mt-2"><span class="text-muted me-2"><del class="font-size-16 fw-normal">$500</del></span>$450</h5>*@
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="mt-8">
+
+                                            <h5 class="text-muted mb-2">Tổng tiền : @WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(item.TotalAmount)</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            @if (item.Confirm == true)
+                                            {
+
+                                            }
+                                            @if (item.typeOrder == false)
+                                            {
+                                                <div class="col-md-6">
+                                                    <span style="color:lightslategray;width:5px" aria-label="Vui lòng chỉ nhấn " Đã nhận được hàng" khi đơn hàng đã được giao đến bạn và sản phẩm nhận được không có vấn đề nào." tabindex="0">
+                                                        Vui lòng chỉ nhấn "Đã nhận được hàng" khi đơn hàng đã được giao đến bạn và sản phẩm nhận được không có vấn đề nào.
+                                                    </span>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <button type="button" class="btn btn-primary btnCancelOrder " id="@item.OrderId">Hủy đơn hàng</button>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <button class="btn btn-danger  btnReturnOrder"><small>Yêu Cầu Hoàn Trả Hàng/Hoàn Tiền</small></button>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <button class="btn btn-dark">Liên Hệ Shop</button>
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <div class="col-md-6">
+                                                    <span style="color:lightslategray;width:5px" aria-label="Đơn hàng đã hủy." tabindex="0">
+                                                        Đơn hàng đã hủy
+                                                    </span>
+                                                </div>
+                                            }
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                }
+            }
+            else
+            {
+                <div class="col-xl-4">
+                    <div class="mt-5 mt-lg-0">
+                        <div class="card border shadow-none">
+                            <div class="card-header bg-transparent border-bottom py-3 px-4">
+                                <h5 class="font-size-16 mb-0">Order Summary <span class="float-end">#MN0124</span></h5>
+                            </div>
+                            <div class="card-body p-4 pt-2">
+
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td>Sub Total :</td>
+                                                <td class="text-end">$ 780</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Discount : </td>
+                                                <td class="text-end">- $ 78</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shipping Charge :</td>
+                                                <td class="text-end">$ 25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Estimated Tax : </td>
+                                                <td class="text-end">$ 18.20</td>
+                                            </tr>
+                                            <tr class="bg-light">
+                                                <th>Total :</th>
+                                                <td class="text-end">
+                                                    <span class="fw-bold">
+                                                        $ 745.2
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- end table-responsive -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <!-- end card -->
+
+            <div class="row my-4">
+                <div class="col-sm-6">
+                    <a href="/home/index" class="btn btn-link text-muted">
+                        <i class="mdi mdi-arrow-left me-1"></i> Tiếp tục mua hàng
+                    </a>
+                </div>
+            </div> <!-- end row-->
+        </div>
+
+
+    </div>
+
+</div>

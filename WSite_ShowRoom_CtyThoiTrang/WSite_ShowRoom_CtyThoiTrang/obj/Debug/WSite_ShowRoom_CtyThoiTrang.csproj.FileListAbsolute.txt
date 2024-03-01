@@ -1,0 +1,410 @@
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.dll.config
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.pdb
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.exe
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.exe.config
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.rsp
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.exe
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.exe.config
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.rsp
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Managed.Core.targets
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.AppContext.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Collections.Immutable.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Console.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Globalization.Calendars.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.Compression.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.FileSystem.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Net.Http.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Net.Sockets.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Reflection.Metadata.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.ValueTuple.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XmlDocument.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XPath.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.exe
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.exe.config
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.rsp
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\VBCSCompiler.exe
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\VBCSCompiler.exe.config
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.SqlServer.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.Web.Infrastructure.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Helpers.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Mvc.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Razor.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Deployment.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Razor.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.xml
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.SqlServer.xml
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Razor.xml
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.xml
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Deployment.xml
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Razor.xml
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Helpers.xml
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Mvc.xml
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.AssemblyReference.cache
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.CoreCompileInputs.cache
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.CopyComplete
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.pdb
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\CKFinder.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\CKFinder.pdb
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.dll.config
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.pdb
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.exe
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.exe.config
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.rsp
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.exe
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.exe.config
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.rsp
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Managed.Core.targets
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.AppContext.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Collections.Immutable.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Console.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Globalization.Calendars.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.Compression.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.FileSystem.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Net.Http.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Net.Sockets.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Reflection.Metadata.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.ValueTuple.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XmlDocument.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XPath.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.exe
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.exe.config
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.rsp
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\VBCSCompiler.exe
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\VBCSCompiler.exe.config
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\CKFinder.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.SqlServer.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.Web.Infrastructure.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Helpers.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Mvc.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Razor.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Deployment.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Razor.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\CKFinder.pdb
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.xml
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.SqlServer.xml
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Razor.xml
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.xml
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Deployment.xml
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Razor.xml
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Helpers.xml
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Mvc.xml
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.AssemblyReference.cache
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.CoreCompileInputs.cache
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.CopyComplete
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.pdb
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.Mvc.dll
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.xml
+D:\DaiHoc\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.Mvc.xml
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.Mvc.dll
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.xml
+D:\@DoAn_ChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.Mvc.xml
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.AssemblyReference.cache
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.CoreCompileInputs.cache
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.pdb
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.dll.config
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.pdb
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.exe
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.exe.config
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.rsp
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.exe
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.exe.config
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.rsp
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Managed.Core.targets
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.AppContext.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Collections.Immutable.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Console.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Globalization.Calendars.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.Compression.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.FileSystem.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Net.Http.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Net.Sockets.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Reflection.Metadata.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.ValueTuple.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XmlDocument.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XPath.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.exe
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.exe.config
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.rsp
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\VBCSCompiler.exe
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\VBCSCompiler.exe.config
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\CKFinder.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.SqlServer.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.Web.Infrastructure.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.Mvc.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Helpers.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Mvc.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Razor.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Deployment.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Razor.dll
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\CKFinder.pdb
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.xml
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.SqlServer.xml
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.xml
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.Mvc.xml
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Razor.xml
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.xml
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Deployment.xml
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Razor.xml
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Helpers.xml
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Mvc.xml
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\@DoAnChuyenNganh\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.CopyComplete
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.dll.config
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.pdb
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.exe
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.exe.config
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.rsp
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.exe
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.exe.config
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.rsp
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.AppContext.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Console.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.Compression.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Net.Http.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.ValueTuple.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.exe
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.exe.config
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.rsp
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\VBCSCompiler.exe
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\CKFinder.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.Mvc.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Helpers.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Mvc.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Razor.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Razor.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\CKFinder.pdb
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.xml
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.xml
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.Mvc.xml
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Razor.xml
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.xml
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Razor.xml
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Helpers.xml
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Mvc.xml
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.CopyComplete
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.dll
+C:\Users\ADMIN\Documents\Zalo Received Files\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.pdb
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.dll.config
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\WSite_ShowRoom_CtyThoiTrang.pdb
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.exe
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.exe.config
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csc.rsp
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.exe
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.exe.config
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\csi.rsp
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Managed.Core.targets
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.AppContext.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Collections.Immutable.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Console.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Globalization.Calendars.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.Compression.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.Compression.ZipFile.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.FileSystem.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Net.Http.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Net.Sockets.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Reflection.Metadata.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.ValueTuple.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XmlDocument.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XPath.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.exe
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.exe.config
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\vbc.rsp
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\VBCSCompiler.exe
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\roslyn\VBCSCompiler.exe.config
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\CKFinder.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.SqlServer.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.Web.Infrastructure.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.Mvc.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Helpers.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Mvc.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Razor.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Deployment.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Razor.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\CKFinder.pdb
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.xml
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\EntityFramework.SqlServer.xml
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.xml
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\PagedList.Mvc.xml
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Razor.xml
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.xml
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Deployment.xml
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Webpages.Razor.xml
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Helpers.xml
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\System.Web.Mvc.xml
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.AssemblyReference.cache
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.CoreCompileInputs.cache
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.csproj.CopyComplete
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.dll
+G:\Khang\Khang\Khang\WebSite\WSite_ShowRoom_CtyThoiTrang\WSite_ShowRoom_CtyThoiTrang\obj\Debug\WSite_ShowRoom_CtyThoiTrang.pdb

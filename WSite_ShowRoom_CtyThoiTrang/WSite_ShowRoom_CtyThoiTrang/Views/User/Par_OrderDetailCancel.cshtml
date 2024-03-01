@@ -1,0 +1,42 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_OrderDetail>
+@if (Model.Any())
+{
+    foreach (var item in Model)
+    {
+        <div class="card-body">
+            <div id="@item.Id" class="yourDivClass">
+                <div class="d-flex align-items-start border-bottom pb-3">
+                    <div class="me-4">
+                        <img src="@item.tb_ProductDetai.tb_Products.Image" alt="" class="img-cart " style="width: 70px">
+                    </div>
+                    <div class="flex-grow-1 align-self-center overflow-hidden">
+                        <div>
+                            <h5 class="text-truncate font-size-18 text-dark"><a href="@Url.Action("Detail", "Product", new { id =item.ProductDetai, alias = item.tb_ProductDetai.tb_Products.Alias }) " style="text-decoration: none;color:lightslategray">@item.tb_ProductDetai.tb_Products.Title</a></h5>
+
+                            @if (item.tb_ProductDetai.Size == 1)
+                            {
+                                <span>Size:S</span>
+                            }
+                            else if (item.tb_ProductDetai.Size == 2)
+                            {
+                                <span>Size:M</span>
+                            }
+                            else if (item.tb_ProductDetai.Size == 3)
+                            {
+                                <span>Size:Xl</span>
+                            }
+                            <p class="mb-0 mt-1">Số lượng : <span class="fw-medium">@item.Quantity</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+       
+
+    }
+}
+
+
+
+

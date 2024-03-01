@@ -1,0 +1,81 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_KhachHang>
+
+@{
+    ViewBag.Title = "FindClient";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutSeller.cshtml";
+}
+@section naviheader{
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin/seller/index" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin/category" class="nav-link">@ViewBag.Title</a>
+        </li>
+    </ul>
+}
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Hệ thống bán hàng KTA Model</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/admin/seller/index">Home</a></li>
+                    <li class="breadcrumb-item active">@ViewBag.Title</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<section class="content">
+    <div class="row">
+        <div id="show_success"></div>
+        <div class="col-md-9">
+            @using (Html.BeginForm("FindClient", "Seller", FormMethod.Post, new { id = "searchForm" }))
+            {
+                @Html.TextBox("Search", "", new { @class = "form-control form-control rounded-start-pill" })
+                <button type="submit" class="btn btn-success rounded-end-pill" style="width: 70px" value="Search">  <i style="color:white" class="fa-solid fa-magnifying-glass"></i></button>
+
+
+            }
+
+
+
+
+            @if (ViewBag.Find != null)
+            {
+                foreach (var item in Model)
+                {
+                    <p>@item.TenKhachHang</p>
+                    @Html.Action("Partial_ThanhToanDaCoTaiKhoan", "Seller", new { id = @item.IdKhachHang })
+                }
+            }
+            else
+            {
+                <p>Khách hàng chưa có tài khoản</p>
+                @Html.Action("Partail_ThongTinKhachHang", "Seller")
+            }
+
+
+        </div>
+        <div class="col-md-3">
+            @Html.Action("Partial_Item_ThanhToan", "Seller")
+        </div>
+    </div>
+</section>
+
+@section scripts{
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script>
+
+    </script>
+}

@@ -1,0 +1,289 @@
+﻿@model WSite_ShowRoom_CtyThoiTrang.Models.tb_Return
+
+@{
+    ViewBag.Title = "Đơn hàng trả";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutWareHouse.cshtml";
+}
+
+@section naviheader{
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin/category" class="nav-link">@ViewBag.Title</a>
+        </li>
+    </ul>
+}
+
+<link href="~/Content/CSS/Admin/AccountClient.css" rel="stylesheet" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Quản lý hàng trả</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">@ViewBag.Title</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<section class="content">
+    <div class="col-12 col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="fm-search">
+                    <div class="mb-0">
+                        <div class="input-group input-group-lg">
+                            @using(Html.BeginForm("FindReturn", "WareHouse", FormMethod.Post))
+                            {
+                            @Html.TextBox("Search", "", new { @class = "form-control form-control rounded-start-pill" })
+                            <button type="submit" class="btn btn-success rounded-end-pill" style="width: 70px" value="Search">  <i style="color:white" class="fa-solid fa-magnifying-glass"></i></button>
+
+
+                            }
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 col-lg-12">
+                        <div class="card shadow-none border radius-15">
+                            <div class="card-body">
+                                @if(Model!= null )
+                                {
+                                <p>Mã đơn hàng trả:  @ViewBag.Search</p>
+                                    
+                                
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Chi tiết đơn hàng trả</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Mã đơn hàng</label>
+                                                    <p class="form-control">@Model.Code</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Họ tên khách</label>
+                                                    <p class="form-control">@Model.tb_Order.tb_KhachHang.TenKhachHang</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Tổng tiền</label>
+                                                    <p class="form-control">@WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(Model.tb_Order.TotalAmount, 0) đ</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Số điện thoại</label>
+                                                    <p class="form-control">@Model.tb_Order.tb_KhachHang.SDT</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Ngày tạo</label>
+                                                    <p class="form-control">@*@item.CreateDate.ToString("dd/MM/yyyy")*@</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Lý do trả hàng</label>
+                                                    <p class="form-control">@Model.Satus</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2>Danh sách sản phẩm</h2>
+                                            </div>
+                                            <div class="col-12">
+                                                @Html.Action("Detail_SanPham", "WareHouse", new { id = Model.OrderId })
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-footer">
+
+                                    </div>
+                                    <div class="">
+                                        <button class="btn btn-success BtnXNKiemTraHang" data-id="@Model.OrderId">Xác nhận kiểm tra</button>
+                                    </div>
+                                </div>
+                                
+                                }
+                                else
+                                {
+
+                                      <h3 class="text-danger">Không tìm thấy mã đơn hàng @ViewBag.Search</h3>
+                                }
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+@section scripts{
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('body').on('change', '#SelectAll', function () {
+                var checkStatus = this.checked;
+                var checkbox = $(this).parents('.card-body').find('tr td input:checkbox');
+                checkbox.each(function () {
+                    this.checked = checkStatus;
+                    if (this.checked) {
+                        checkbox.attr('selected', 'checked');
+                    } else {
+                        checkbox.attr('selected', '');
+                    }
+                });
+            });
+            $('body').on('click', '.BtnXNKiemTraHang', function () {
+                var selectedProductIds = [];
+                $('.cbkItem:checked').each(function () {
+                    selectedProductIds.push($(this).data('id'));
+                });
+                var id = $(this).data("id");
+                console.log(selectedProductIds);
+                console.log(id);
+
+               
+
+
+                $.ajax({
+                    url: '/Admin/Warehouse/ImportReturn',
+                    type: 'POST',
+                    data: { ListId: selectedProductIds ,OrderId:id},
+                    dataType: 'json',
+                    success: function (result) {
+                        // Xử lý kết quả từ server nếu cần
+                        if (result.Success) {
+                            if (result.code == 1) {
+                                console.log('Đặt hàng thành công');
+                                const Toast = Swal.mixin({
+                                    toast: true,
+                                    position: "top-end",
+                                    showConfirmButton: false,
+                                    timer: 3000,
+                                    timerProgressBar: true,
+                                    didOpen: (toast) => {
+                                        toast.onmouseenter = Swal.stopTimer;
+                                        toast.onmouseleave = Swal.resumeTimer;
+                                    }
+                                });
+                                Toast.fire({
+                                    icon: "success",
+                                    title: "Nhập kho thành công "
+                                });
+                            }
+                           
+                        } else {
+                            console.error('Lỗi khi đặt hàng. Lỗi:', result.msg, 'Mã lỗi:', result.code);
+                            if (result.code == -7) {
+                                Swal.fire({
+                                    icon: "warning",
+                                    title: "Lỗi tìm...",
+                                    text: "Vui lòng tích sản phẩm khôn hỏng",
+                                    /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                                });
+                            }
+                            if (result.code == -6) {
+                                Swal.fire({
+                                    icon: "warning",
+                                    title: "Lỗi tìm...",
+                                    text: "Không tồn tài sản phẩm này ",
+                                    /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                                });
+                            }
+                            if (result.code == -5) {
+                                Swal.fire({
+                                    icon: "warning",
+                                    title: "Lỗi tìm...",
+                                    text: "Không tồn tài sản phẩm này trong đơn hàng",
+                                    /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                                });
+                            }
+                            if (result.code == -4) {
+                                Swal.fire({
+                                    icon: "error",
+                                    title: "Lỗi code...",
+                                    text: "Không tìm thấy kho xuất hãy kiểm tra lại",
+                                   
+                                });
+                            }
+                            if (result.code == -3) {
+                                Swal.fire({
+                                    icon: "question",
+                                    title: "Lỗi code...",
+                                    text: "Đơn hàng trả lập lại 2 lần",
+                                    /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                                });
+                            }
+                            if (result.code == -2) {
+                                Swal.fire({
+                                    icon: "warning",
+                                    title: "Lỗi tìm...",
+                                    text: "Không tìm thấy trong bảng yêu cầu Return",
+                                    /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                                });
+                            }
+                        }
+                    },
+                    error: function (error) {
+                        console.error('Lỗi khi gọi API:', error);
+                    }
+                });
+
+
+
+            });
+
+        });
+
+        //function getIdOrderDetail() {
+        //    var selectedProductIds = [];
+        //    $(".yourDivClass").each(function () {
+        //        var divId = $(this).attr("id");
+        //        selectedProductIds.push(divId);
+        //    });
+
+        //    return selectedProductIds;
+        //}
+
+    </script>
+
+}
+
+
+

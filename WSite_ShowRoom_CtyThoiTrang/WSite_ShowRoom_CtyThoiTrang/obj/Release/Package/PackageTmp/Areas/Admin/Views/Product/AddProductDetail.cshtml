@@ -1,0 +1,10 @@
+﻿@model WSite_ShowRoom_CtyThoiTrang.Models.tb_Products
+@{
+    ViewBag.Title = "AddProductDetail";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+@Html.Action("Partial_AddProductDetail", "Product", new { id = Model.ProductId })

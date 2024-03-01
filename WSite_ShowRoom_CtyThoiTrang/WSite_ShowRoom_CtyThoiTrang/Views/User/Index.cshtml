@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "Tất cả đơn hàng";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+
+
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_responsive.css">
+
+
+
+<!-- Main content -->
+<section class="content">
+
+
+
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="card">
+                    <div class="card-header p-2">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Tất cả</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Chờ thanh toán</a></li>
+                            @*<li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Chờ giao hàng</a></li>*@
+                            <li class="nav-item"><a class="nav-link" href="#Success" data-toggle="tab">Hoàn thành</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Canceled" data-toggle="tab">Đã hủy</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Return" data-toggle="tab">Trả hàng</a></li>
+                        </ul>
+                    </div><!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div class="active tab-pane" id="activity">
+
+                                Tất cả
+                                @Html.Action("Partail_AllOrder", "User")
+                            </div>
+
+
+
+                            <div class="tab-pane" id="timeline">
+                                <div class="row">
+                                    Chờ thanh toán
+                                    @Html.Action("WaitPayOrder", "User")
+                                </div>
+                            </div>
+
+
+                            @*<div class="tab-pane" id="settings">
+                                Chờ giao hàng
+                                @Html.Action("Partail_ChoGiaoHang", "User")
+                            </div>*@
+
+                            <div class="tab-pane" id="Success">
+                               Đơn hàng hoàn thành
+                                @Html.Action("OrderSuccess", "User")
+                            </div>
+                            <div class="tab-pane" id="Canceled">
+                                Đã hủy
+                                @Html.Action("Partial_OrderCanceled", "User")
+
+                            </div>
+                            <div class="tab-pane" id="Return">
+                                Trả hàng
+                                @Html.Action("Partial_OrderReturn", "User")
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+@section  scripts{
+    <script src="~/Content/assets/js/categories_custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.auto').autoNumeric('init');
+            $('#demoPrice').bind('blur focusout keypress keyup', function () {
+                var demoGet = $('#demoPrice').autoNumeric('get');
+                $('#Price').val(demoGet);
+                $('#Price').autoNumeric('set', demoGet);
+            });
+            $('#demoPriceSale').bind('blur focusout keypress keyup', function () {
+                var demoGet = $('#demoPriceSale').autoNumeric('get');
+                $('#PriceSale').val(demoGet);
+                $('#PriceSale').autoNumeric('set', demoGet);
+            });
+            $('#demoOriginalPrice').bind('blur focusout keypress keyup', function () {
+                var demoGet = $('#demoOriginalPrice').autoNumeric('get');
+                $('#OriginalPrice').val(demoGet);
+                $('#OriginalPrice').autoNumeric('set', demoGet);
+            });
+            //CKEDITOR.replace('txtDetail', {
+            //    customConfig: '/content/ckeditor/config.js',
+            //    extraAllowedContent: 'span',
+            //});
+
+           
+        });
+       
+        }
+
+    </script>
+}

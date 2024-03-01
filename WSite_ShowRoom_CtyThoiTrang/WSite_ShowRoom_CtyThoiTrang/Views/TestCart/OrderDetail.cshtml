@@ -1,0 +1,39 @@
+﻿@model  IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_OrderDetail>
+
+
+@if (Model != null && Model.Any())
+
+{
+    var i = ((ViewBag.Page - 1) * ViewBag.PageSize) + 1;
+    foreach (var item in Model)
+    {
+        var tongTien = decimal.Zero;
+        var strImg = "";
+        var CheckImage = item.tb_Products.tb_ProductImage.FirstOrDefault(x => x.IsDefault);
+        tongTien += item.Price;
+        if (CheckImage != null)
+        {
+            strImg = CheckImage.Image;
+        }
+        <br />
+        <img class="imgproduct" data-id="@item.ProductId" src="@strImg" width="70" />
+        <h3> @item.tb_Products.Title</h3>
+        <p> Phân loại sản sẩn phẩm : @item.tb_Products.tb_ProductCategory.Title</p>
+        if (item.tb_Products.PriceSale > 0)
+        {
+            <div class="product_price">@WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(item.tb_Products.Price, 0)<span>@WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(item.Price, 0)</span></div>
+
+        }
+        else
+        {
+            <p style="color: Orange"><i class="fas fa-money-bill"></i>Thành Tiền :@WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(@item.Price) đ</p>
+        }
+
+    }
+}
+else
+{
+
+    <p>Không có bản ghi nào!!!</p>
+
+}

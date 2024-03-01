@@ -1,0 +1,137 @@
+﻿@model WSite_ShowRoom_CtyThoiTrang.Models.TokenAddProductsDetail
+
+@using (Ajax.BeginForm("Add", "ProductDetail", new AjaxOptions
+{
+    HttpMethod = "POST",
+    UpdateTargetId = "load_data",
+    OnSuccess = "OnSuccessCO",
+    OnFailure = "OnFailure",
+    OnBegin = "OnBeginCO"
+}, new { @Id = "myForm" }))
+{
+    <script>
+        function OnBeginCO() {
+            $('#btnOutOrder').attr("disabled", "disabled");
+        }
+        function validateForm() {
+            var Size = document.getElementById('Size').value.trim();
+            var Quantity = document.getElementById('Quantity').value.trim();
+
+            if (!Quantity || !Size) {
+
+                Swal.fire({
+                    icon: "error",
+                    title: "Lỗi ...",
+                    text: "Vui lòng điền đầy đủ thông tin.",
+                    /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                });
+                
+                return false;
+
+            }
+
+        }
+
+
+        function OnSuccessCO(res) {
+            if (res.Success) {
+                if (res.Code == 1) {
+
+
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: "top-end",
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                            toast.onmouseenter = Swal.stopTimer;
+                            toast.onmouseleave = Swal.resumeTimer;
+                        }
+                    });
+
+                    Toast.fire({
+                        icon: "success",
+                        title: "Thêm thành thành công"
+                    });
+                    location.href = "/admin/product";
+
+                }
+            }
+            else {
+                if (res.Code == -2) {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Lỗi tìm...",
+                        text: "Không tìm thấy mã sản phẩm gốc",
+                        /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                    });
+
+                }
+                if (res.Code == -3) {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Lỗi tìm...",
+                        text: "Sản phẩm đã có bảng size",
+                        /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                    });
+
+                }
+                if (res.Code == -1) {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Lỗi ...",
+                        text: "Vui lòng chọn size",
+                        /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                    });
+
+                }
+            }
+
+        }
+
+
+
+
+
+
+
+    </script>
+    @Html.AntiForgeryToken()
+    <h5>Thông tin xuất đơn hàng</h5>
+
+    if (ViewBag.Id != null)
+    {
+        <input type="hidden" id="ProductId" name="ProductId" value="@ViewBag.Id" />
+    }
+
+
+
+
+    <div class="form-group">
+        <label>Số lượng </label>
+        <input type="text" name="Quantity" id="Quantity" required class="form-control" autocomplete="off" placeholder="" />
+    </div>
+
+
+
+
+    <select class="form-control" id="Size" name="Size">
+        <option value="" selected>Size</option>
+        <option value="1" id="chuyenkhoan">M</option>
+        <option value="2" id="chuyenkhoan">L</option>
+        <option value="3" id="chuyenkhoan">XL</option>
+    </select>
+
+
+
+
+    <div class="row">
+        <div class="col-1"></div>
+
+        <div class="col-10 d-grid gap-2 col-10 mx-auto"><button type="submit" class="btn btn-danger btnOutOrder ">Xác Nhận Thuận</button></div>
+
+        <div class="col-1"></div>
+    </div>
+
+}

@@ -1,0 +1,78 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_Order>
+@{
+    ViewBag.Title = "Đơn hàng của bạn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    <link href="~/Content/CSS/Cart/DonMuaKhachHang.css" rel="stylesheet" />
+}
+<style>
+    body {
+        margin-top: 20px;
+        color: #1a202c;
+        text-align: left;
+        background-color: #e2e8f0;
+    }
+</style>
+<div class="container  ">
+    <div class="">
+        <!-- Default box -->
+        <div class="card">
+
+            <div class="">
+               
+                @foreach(var item in Model) 
+                {
+                    <div class="row">
+
+                        <div class="col-12" style="text-align:right;">
+                            @**@
+                        </div>
+                        <div class="inner-main-body p-2 p-sm-3 collapse forum-content show">
+                            <div class="card mb-2">
+                                <div class="card-body p-2 p-sm-3">
+                                    <div class="media forum-item">
+                                        @Html.Action("OrderDetail", "TestCart", new { id = item.OrderId })
+                                        <br />
+                                        <div class="row-cols-md-1">
+                                            <div class="col-md-9">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <p style="color: Orange"><i class="fas fa-money-bill bg-gradient-green"></i>Thành Tiền :@WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(@item.TotalAmount) đ</p>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                
+                }
+
+                
+
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+
+            </div>
+            <!-- /.card-footer-->
+        </div>
+        <!-- /.card -->
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+

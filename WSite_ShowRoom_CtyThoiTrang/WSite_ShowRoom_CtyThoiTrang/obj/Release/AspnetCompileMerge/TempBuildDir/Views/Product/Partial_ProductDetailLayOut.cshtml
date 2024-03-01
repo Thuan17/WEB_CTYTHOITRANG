@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_ProductDetai>
+<style>
+    .ProductDetai {
+        list-style: none;
+    }
+
+        .ProductDetai li {
+            width: 75px;
+            display: inline-block;
+        }
+
+            .ProductDetai li .btnAddToCart123 {
+                display: inline-block;
+            }
+</style>
+
+
+@if (Model != null)
+{
+    <ul class="nav nav-fill">
+        @foreach (var item in Model)
+        {
+
+        <li class="nav-item d-inline-block">
+            @if (item.Size == 1)
+            {
+
+                <button class="red_button add_to_cart_button border-0 btn-0  btnAddToCart123" data-id="@item.ProductDetai">Size:S</button>
+            }
+            @if (item.Size == 2)
+            {
+                <button class="red_button add_to_cart_button border-0 btn-0 btnAddToCart123" data-id="@item.ProductDetai">Size:M</button>
+
+            }
+            @if (item.Size == 3)
+            {
+                <button class="red_button add_to_cart_button  border-0 btn-0 btnAddToCart123" data-id="@item.ProductDetai">Size:XL</button>
+
+            }
+        </li>
+
+        }
+    </ul>
+}
+else
+{
+    <h5 class=" ">
+        Hết hàng
+    </h5>
+}
+

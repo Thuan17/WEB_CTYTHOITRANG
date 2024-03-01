@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CONGTYTHOITRANGModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tb_Cart">
+    <Key>
+      <PropertyRef Name="CartId" />
+    </Key>
+    <Property Name="CartId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdKhachHang" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_CartItem">
+    <Key>
+      <PropertyRef Name="CartItem" />
+    </Key>
+    <Property Name="CartItem" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CartId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="PriceTotal" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="TemPrice" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ProductDetai" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_ChucNang">
+    <Key>
+      <PropertyRef Name="IdChucNang" />
+    </Key>
+    <Property Name="IdChucNang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenChucNang" Type="nvarchar(max)" />
+    <Property Name="MaChucNang" Type="nvarchar(max)" />
+    <Property Name="Createby" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="Modifeby" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_KhachHang">
+    <Key>
+      <PropertyRef Name="IdKhachHang" />
+    </Key>
+    <Property Name="IdKhachHang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SDT" Type="varchar" MaxLength="15" />
+    <Property Name="TenKhachHang" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Password" Type="varchar" MaxLength="100" />
+    <Property Name="Image" Type="nvarchar" MaxLength="250" />
+    <Property Name="Birthday" Type="date" />
+    <Property Name="DiaChi" Type="nvarchar(max)" />
+    <Property Name="SoLanMua" Type="int" />
+    <Property Name="Code" Type="char" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tb_Kho">
+    <Key>
+      <PropertyRef Name="Idkho" />
+    </Key>
+    <Property Name="Idkho" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DiaChi" Type="nvarchar(max)" />
+    <Property Name="Createby" Type="nvarchar(max)" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="Modifeby" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_KhoNhap">
+    <Key>
+      <PropertyRef Name="IdKhoNhap" />
+    </Key>
+    <Property Name="IdKhoNhap" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ImportDate" Type="datetime" Nullable="false" />
+    <Property Name="ImportBy" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="SoLuong" Type="int" Nullable="false" />
+    <Property Name="MaPhieuNhap" Type="char" MaxLength="15" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="Modifeby" Type="nvarchar(max)" />
+    <Property Name="MSNV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="IdKho" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_KhoReturn">
+    <Key>
+      <PropertyRef Name="IdKhoXuat" />
+    </Key>
+    <Property Name="IdKhoXuat" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReturnDate" Type="datetime" Nullable="false" />
+    <Property Name="ReturnBy" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MSNV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ReturnId" Type="int" Nullable="false" />
+    <Property Name="IdKho" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_KhoXuat">
+    <Key>
+      <PropertyRef Name="IdKhoXuat" />
+    </Key>
+    <Property Name="IdKhoXuat" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OutDate" Type="datetime" Nullable="false" />
+    <Property Name="OutBy" Type="nvarchar(max)" />
+    <Property Name="OrderId" Type="int" />
+    <Property Name="Idkho" Type="int" />
+    <Property Name="MSNV" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_NhanVien">
+    <Key>
+      <PropertyRef Name="MSNV" />
+    </Key>
+    <Property Name="MSNV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SDT" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="TenNhanVien" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CCCD" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Image" Type="nvarchar" MaxLength="250" />
+    <Property Name="Birthday" Type="date" Nullable="false" />
+    <Property Name="DiaChi" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NgayVaoLam" Type="date" />
+    <Property Name="Luong" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="GioiTinh" Type="nvarchar" MaxLength="7" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="IdChucNang" Type="int" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_NhanVienImage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MSNV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Image" Type="nvarchar(max)" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CustomerName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="Modifiedby" Type="nvarchar(max)" />
+    <Property Name="TypePayment" Type="int" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="IdKhachHang" Type="int" />
+    <Property Name="typeOrder" Type="bit" />
+    <Property Name="Confirm" Type="bit" />
+    <Property Name="Status" Type="nvarchar(max)" />
+    <Property Name="typeReturn" Type="bit" />
+    <Property Name="Success" Type="bit" />
+    <Property Name="SuccessDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_OrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderId" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="CartItem" Type="int" />
+    <Property Name="damagedProduct" Type="bit" />
+    <Property Name="ProductDetai" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_ProductCategory">
+    <Key>
+      <PropertyRef Name="ProductCategoryId" />
+    </Key>
+    <Property Name="ProductCategoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Icon" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="Modifiedby" Type="nvarchar(max)" />
+    <Property Name="Alias" Type="nvarchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_ProductDetai">
+    <Key>
+      <PropertyRef Name="ProductDetai" />
+    </Key>
+    <Property Name="ProductDetai" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Size" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="Modifeby" Type="nvarchar(max)" />
+    <Property Name="Alias" Type="nvarchar" MaxLength="250" />
+    <Property Name="ProductId" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_ProductImage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="Image" Type="nvarchar(max)" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_Products">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="250" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Detail" Type="nvarchar(max)" />
+    <Property Name="Image" Type="nvarchar" MaxLength="250" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PriceSale" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IsHome" Type="bit" />
+    <Property Name="IsSale" Type="bit" />
+    <Property Name="IsFeature" Type="bit" />
+    <Property Name="IsHot" Type="bit" />
+    <Property Name="ProductCategoryId" Type="int" />
+    <Property Name="SeoTitle" Type="nvarchar" MaxLength="250" />
+    <Property Name="SeoDescription" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="Modifeby" Type="nvarchar(max)" />
+    <Property Name="Alias" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="ViewCount" Type="int" Nullable="false" />
+    <Property Name="OrigianlPrice" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tb_PhanQuyen">
+    <Key>
+      <PropertyRef Name="MSNV" />
+      <PropertyRef Name="IdChucNang" />
+    </Key>
+    <Property Name="MSNV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="IdChucNang" Type="int" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_Return">
+    <Key>
+      <PropertyRef Name="ReturnId" />
+    </Key>
+    <Property Name="ReturnId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="Confirm" Type="bit" />
+    <Property Name="OrderId" Type="int" />
+    <Property Name="IdKhachHang" Type="int" />
+    <Property Name="Satus" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_ReturnDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReturnId" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="ProductDetai" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Seller">
+    <Key>
+      <PropertyRef Name="SellerId" />
+    </Key>
+    <Property Name="SellerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CustomerName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="Modifiedby" Type="nvarchar(max)" />
+    <Property Name="TypePayment" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_SellerDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SellerId" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="ProductDetai" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="CartItemtoProducdetai">
+    <End Role="tb_ProductDetai" Type="Self.tb_ProductDetai" Multiplicity="0..1" />
+    <End Role="tb_CartItem" Type="Self.tb_CartItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ProductDetai">
+        <PropertyRef Name="ProductDetai" />
+      </Principal>
+      <Dependent Role="tb_CartItem">
+        <PropertyRef Name="ProductDetai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ChiTietGioHangtoGioHang1">
+    <End Role="tb_Cart" Type="Self.tb_Cart" Multiplicity="1" />
+    <End Role="tb_CartItem" Type="Self.tb_CartItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Cart">
+        <PropertyRef Name="CartId" />
+      </Principal>
+      <Dependent Role="tb_CartItem">
+        <PropertyRef Name="CartId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="GioHangtoKhachHang">
+    <End Role="tb_KhachHang" Type="Self.tb_KhachHang" Multiplicity="0..1" />
+    <End Role="tb_Cart" Type="Self.tb_Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_KhachHang">
+        <PropertyRef Name="IdKhachHang" />
+      </Principal>
+      <Dependent Role="tb_Cart">
+        <PropertyRef Name="IdKhachHang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ImgNhanVien">
+    <End Role="tb_NhanVien" Type="Self.tb_NhanVien" Multiplicity="1" />
+    <End Role="tb_NhanVienImage" Type="Self.tb_NhanVienImage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_NhanVien">
+        <PropertyRef Name="MSNV" />
+      </Principal>
+      <Dependent Role="tb_NhanVienImage">
+        <PropertyRef Name="MSNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="KhoNhaptoKho">
+    <End Role="tb_Kho" Type="Self.tb_Kho" Multiplicity="1" />
+    <End Role="tb_KhoNhap" Type="Self.tb_KhoNhap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Kho">
+        <PropertyRef Name="Idkho" />
+      </Principal>
+      <Dependent Role="tb_KhoNhap">
+        <PropertyRef Name="IdKho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="KhoNhaptoNhanVien">
+    <End Role="tb_NhanVien" Type="Self.tb_NhanVien" Multiplicity="1" />
+    <End Role="tb_KhoNhap" Type="Self.tb_KhoNhap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_NhanVien">
+        <PropertyRef Name="MSNV" />
+      </Principal>
+      <Dependent Role="tb_KhoNhap">
+        <PropertyRef Name="MSNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="KhoReturntoKho">
+    <End Role="tb_Kho" Type="Self.tb_Kho" Multiplicity="1" />
+    <End Role="tb_KhoReturn" Type="Self.tb_KhoReturn" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Kho">
+        <PropertyRef Name="Idkho" />
+      </Principal>
+      <Dependent Role="tb_KhoReturn">
+        <PropertyRef Name="IdKho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="KhoReturntoNhanVien">
+    <End Role="tb_NhanVien" Type="Self.tb_NhanVien" Multiplicity="1" />
+    <End Role="tb_KhoReturn" Type="Self.tb_KhoReturn" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_NhanVien">
+        <PropertyRef Name="MSNV" />
+      </Principal>
+      <Dependent Role="tb_KhoReturn">
+        <PropertyRef Name="MSNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="KhoReturntoReturn">
+    <End Role="tb_Return" Type="Self.tb_Return" Multiplicity="1" />
+    <End Role="tb_KhoReturn" Type="Self.tb_KhoReturn" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Return">
+        <PropertyRef Name="ReturnId" />
+      </Principal>
+      <Dependent Role="tb_KhoReturn">
+        <PropertyRef Name="ReturnId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="KhoXuattoKho">
+    <End Role="tb_Kho" Type="Self.tb_Kho" Multiplicity="0..1" />
+    <End Role="tb_KhoXuat" Type="Self.tb_KhoXuat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Kho">
+        <PropertyRef Name="Idkho" />
+      </Principal>
+      <Dependent Role="tb_KhoXuat">
+        <PropertyRef Name="Idkho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="KhoXuattoNhanVien">
+    <End Role="tb_NhanVien" Type="Self.tb_NhanVien" Multiplicity="1" />
+    <End Role="tb_KhoXuat" Type="Self.tb_KhoXuat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_NhanVien">
+        <PropertyRef Name="MSNV" />
+      </Principal>
+      <Dependent Role="tb_KhoXuat">
+        <PropertyRef Name="MSNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="KhoXuattoOrder">
+    <End Role="tb_Order" Type="Self.tb_Order" Multiplicity="0..1" />
+    <End Role="tb_KhoXuat" Type="Self.tb_KhoXuat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="tb_KhoXuat">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="NhanVientoChucVu">
+    <End Role="tb_ChucNang" Type="Self.tb_ChucNang" Multiplicity="0..1" />
+    <End Role="tb_NhanVien" Type="Self.tb_NhanVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ChucNang">
+        <PropertyRef Name="IdChucNang" />
+      </Principal>
+      <Dependent Role="tb_NhanVien">
+        <PropertyRef Name="IdChucNang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderDetailtoProductDetail">
+    <End Role="tb_ProductDetai" Type="Self.tb_ProductDetai" Multiplicity="0..1" />
+    <End Role="tb_OrderDetail" Type="Self.tb_OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ProductDetai">
+        <PropertyRef Name="ProductDetai" />
+      </Principal>
+      <Dependent Role="tb_OrderDetail">
+        <PropertyRef Name="ProductDetai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrdertoKhachHang">
+    <End Role="tb_KhachHang" Type="Self.tb_KhachHang" Multiplicity="0..1" />
+    <End Role="tb_Order" Type="Self.tb_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_KhachHang">
+        <PropertyRef Name="IdKhachHang" />
+      </Principal>
+      <Dependent Role="tb_Order">
+        <PropertyRef Name="IdKhachHang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PQuyentoChucNang">
+    <End Role="tb_ChucNang" Type="Self.tb_ChucNang" Multiplicity="1" />
+    <End Role="tb_PhanQuyen" Type="Self.tb_PhanQuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ChucNang">
+        <PropertyRef Name="IdChucNang" />
+      </Principal>
+      <Dependent Role="tb_PhanQuyen">
+        <PropertyRef Name="IdChucNang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PQuyentoNhanVien">
+    <End Role="tb_NhanVien" Type="Self.tb_NhanVien" Multiplicity="1" />
+    <End Role="tb_PhanQuyen" Type="Self.tb_PhanQuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_NhanVien">
+        <PropertyRef Name="MSNV" />
+      </Principal>
+      <Dependent Role="tb_PhanQuyen">
+        <PropertyRef Name="MSNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductDetaitoProducts">
+    <End Role="tb_Products" Type="Self.tb_Products" Multiplicity="0..1" />
+    <End Role="tb_ProductDetai" Type="Self.tb_ProductDetai" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Products">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="tb_ProductDetai">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductstoProductCategory">
+    <End Role="tb_ProductCategory" Type="Self.tb_ProductCategory" Multiplicity="0..1" />
+    <End Role="tb_Products" Type="Self.tb_Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ProductCategory">
+        <PropertyRef Name="ProductCategoryId" />
+      </Principal>
+      <Dependent Role="tb_Products">
+        <PropertyRef Name="ProductCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProImgtoProduc">
+    <End Role="tb_Products" Type="Self.tb_Products" Multiplicity="1" />
+    <End Role="tb_ProductImage" Type="Self.tb_ProductImage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Products">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="tb_ProductImage">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ReturnDetailtoProductDetail">
+    <End Role="tb_ProductDetai" Type="Self.tb_ProductDetai" Multiplicity="0..1" />
+    <End Role="tb_ReturnDetail" Type="Self.tb_ReturnDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ProductDetai">
+        <PropertyRef Name="ProductDetai" />
+      </Principal>
+      <Dependent Role="tb_ReturnDetail">
+        <PropertyRef Name="ProductDetai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ReturnDetailtoReturn">
+    <End Role="tb_Return" Type="Self.tb_Return" Multiplicity="1" />
+    <End Role="tb_ReturnDetail" Type="Self.tb_ReturnDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Return">
+        <PropertyRef Name="ReturnId" />
+      </Principal>
+      <Dependent Role="tb_ReturnDetail">
+        <PropertyRef Name="ReturnId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ReturntoOrder">
+    <End Role="tb_Order" Type="Self.tb_Order" Multiplicity="0..1" />
+    <End Role="tb_Return" Type="Self.tb_Return" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="tb_Return">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SellerDetailtoProductDetai">
+    <End Role="tb_ProductDetai" Type="Self.tb_ProductDetai" Multiplicity="1" />
+    <End Role="tb_SellerDetail" Type="Self.tb_SellerDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ProductDetai">
+        <PropertyRef Name="ProductDetai" />
+      </Principal>
+      <Dependent Role="tb_SellerDetail">
+        <PropertyRef Name="ProductDetai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SellerDetailtoSeller">
+    <End Role="tb_Seller" Type="Self.tb_Seller" Multiplicity="1" />
+    <End Role="tb_SellerDetail" Type="Self.tb_SellerDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Seller">
+        <PropertyRef Name="SellerId" />
+      </Principal>
+      <Dependent Role="tb_SellerDetail">
+        <PropertyRef Name="SellerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_OrderDetail_toi_tb_Order">
+    <End Role="tb_Order" Type="Self.tb_Order" Multiplicity="1" />
+    <End Role="tb_OrderDetail" Type="Self.tb_OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="tb_OrderDetail">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CONGTYTHOITRANGModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Cart" EntityType="Self.tb_Cart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_CartItem" EntityType="Self.tb_CartItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ChucNang" EntityType="Self.tb_ChucNang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_KhachHang" EntityType="Self.tb_KhachHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Kho" EntityType="Self.tb_Kho" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_KhoNhap" EntityType="Self.tb_KhoNhap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_KhoReturn" EntityType="Self.tb_KhoReturn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_KhoXuat" EntityType="Self.tb_KhoXuat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_NhanVien" EntityType="Self.tb_NhanVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_NhanVienImage" EntityType="Self.tb_NhanVienImage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Order" EntityType="Self.tb_Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_OrderDetail" EntityType="Self.tb_OrderDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductCategory" EntityType="Self.tb_ProductCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductDetai" EntityType="Self.tb_ProductDetai" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductImage" EntityType="Self.tb_ProductImage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Products" EntityType="Self.tb_Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_PhanQuyen" EntityType="Self.tb_PhanQuyen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Return" EntityType="Self.tb_Return" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ReturnDetail" EntityType="Self.tb_ReturnDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Seller" EntityType="Self.tb_Seller" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_SellerDetail" EntityType="Self.tb_SellerDetail" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="CartItemtoProducdetai" Association="Self.CartItemtoProducdetai">
+      <End Role="tb_ProductDetai" EntitySet="tb_ProductDetai" />
+      <End Role="tb_CartItem" EntitySet="tb_CartItem" />
+    </AssociationSet>
+    <AssociationSet Name="ChiTietGioHangtoGioHang1" Association="Self.ChiTietGioHangtoGioHang1">
+      <End Role="tb_Cart" EntitySet="tb_Cart" />
+      <End Role="tb_CartItem" EntitySet="tb_CartItem" />
+    </AssociationSet>
+    <AssociationSet Name="GioHangtoKhachHang" Association="Self.GioHangtoKhachHang">
+      <End Role="tb_KhachHang" EntitySet="tb_KhachHang" />
+      <End Role="tb_Cart" EntitySet="tb_Cart" />
+    </AssociationSet>
+    <AssociationSet Name="ImgNhanVien" Association="Self.ImgNhanVien">
+      <End Role="tb_NhanVien" EntitySet="tb_NhanVien" />
+      <End Role="tb_NhanVienImage" EntitySet="tb_NhanVienImage" />
+    </AssociationSet>
+    <AssociationSet Name="KhoNhaptoKho" Association="Self.KhoNhaptoKho">
+      <End Role="tb_Kho" EntitySet="tb_Kho" />
+      <End Role="tb_KhoNhap" EntitySet="tb_KhoNhap" />
+    </AssociationSet>
+    <AssociationSet Name="KhoNhaptoNhanVien" Association="Self.KhoNhaptoNhanVien">
+      <End Role="tb_NhanVien" EntitySet="tb_NhanVien" />
+      <End Role="tb_KhoNhap" EntitySet="tb_KhoNhap" />
+    </AssociationSet>
+    <AssociationSet Name="KhoReturntoKho" Association="Self.KhoReturntoKho">
+      <End Role="tb_Kho" EntitySet="tb_Kho" />
+      <End Role="tb_KhoReturn" EntitySet="tb_KhoReturn" />
+    </AssociationSet>
+    <AssociationSet Name="KhoReturntoNhanVien" Association="Self.KhoReturntoNhanVien">
+      <End Role="tb_NhanVien" EntitySet="tb_NhanVien" />
+      <End Role="tb_KhoReturn" EntitySet="tb_KhoReturn" />
+    </AssociationSet>
+    <AssociationSet Name="KhoReturntoReturn" Association="Self.KhoReturntoReturn">
+      <End Role="tb_Return" EntitySet="tb_Return" />
+      <End Role="tb_KhoReturn" EntitySet="tb_KhoReturn" />
+    </AssociationSet>
+    <AssociationSet Name="KhoXuattoKho" Association="Self.KhoXuattoKho">
+      <End Role="tb_Kho" EntitySet="tb_Kho" />
+      <End Role="tb_KhoXuat" EntitySet="tb_KhoXuat" />
+    </AssociationSet>
+    <AssociationSet Name="KhoXuattoNhanVien" Association="Self.KhoXuattoNhanVien">
+      <End Role="tb_NhanVien" EntitySet="tb_NhanVien" />
+      <End Role="tb_KhoXuat" EntitySet="tb_KhoXuat" />
+    </AssociationSet>
+    <AssociationSet Name="KhoXuattoOrder" Association="Self.KhoXuattoOrder">
+      <End Role="tb_Order" EntitySet="tb_Order" />
+      <End Role="tb_KhoXuat" EntitySet="tb_KhoXuat" />
+    </AssociationSet>
+    <AssociationSet Name="NhanVientoChucVu" Association="Self.NhanVientoChucVu">
+      <End Role="tb_ChucNang" EntitySet="tb_ChucNang" />
+      <End Role="tb_NhanVien" EntitySet="tb_NhanVien" />
+    </AssociationSet>
+    <AssociationSet Name="OrderDetailtoProductDetail" Association="Self.OrderDetailtoProductDetail">
+      <End Role="tb_ProductDetai" EntitySet="tb_ProductDetai" />
+      <End Role="tb_OrderDetail" EntitySet="tb_OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="OrdertoKhachHang" Association="Self.OrdertoKhachHang">
+      <End Role="tb_KhachHang" EntitySet="tb_KhachHang" />
+      <End Role="tb_Order" EntitySet="tb_Order" />
+    </AssociationSet>
+    <AssociationSet Name="PQuyentoChucNang" Association="Self.PQuyentoChucNang">
+      <End Role="tb_ChucNang" EntitySet="tb_ChucNang" />
+      <End Role="tb_PhanQuyen" EntitySet="tb_PhanQuyen" />
+    </AssociationSet>
+    <AssociationSet Name="PQuyentoNhanVien" Association="Self.PQuyentoNhanVien">
+      <End Role="tb_NhanVien" EntitySet="tb_NhanVien" />
+      <End Role="tb_PhanQuyen" EntitySet="tb_PhanQuyen" />
+    </AssociationSet>
+    <AssociationSet Name="ProductDetaitoProducts" Association="Self.ProductDetaitoProducts">
+      <End Role="tb_Products" EntitySet="tb_Products" />
+      <End Role="tb_ProductDetai" EntitySet="tb_ProductDetai" />
+    </AssociationSet>
+    <AssociationSet Name="ProductstoProductCategory" Association="Self.ProductstoProductCategory">
+      <End Role="tb_ProductCategory" EntitySet="tb_ProductCategory" />
+      <End Role="tb_Products" EntitySet="tb_Products" />
+    </AssociationSet>
+    <AssociationSet Name="ProImgtoProduc" Association="Self.ProImgtoProduc">
+      <End Role="tb_Products" EntitySet="tb_Products" />
+      <End Role="tb_ProductImage" EntitySet="tb_ProductImage" />
+    </AssociationSet>
+    <AssociationSet Name="ReturnDetailtoProductDetail" Association="Self.ReturnDetailtoProductDetail">
+      <End Role="tb_ProductDetai" EntitySet="tb_ProductDetai" />
+      <End Role="tb_ReturnDetail" EntitySet="tb_ReturnDetail" />
+    </AssociationSet>
+    <AssociationSet Name="ReturnDetailtoReturn" Association="Self.ReturnDetailtoReturn">
+      <End Role="tb_Return" EntitySet="tb_Return" />
+      <End Role="tb_ReturnDetail" EntitySet="tb_ReturnDetail" />
+    </AssociationSet>
+    <AssociationSet Name="ReturntoOrder" Association="Self.ReturntoOrder">
+      <End Role="tb_Order" EntitySet="tb_Order" />
+      <End Role="tb_Return" EntitySet="tb_Return" />
+    </AssociationSet>
+    <AssociationSet Name="SellerDetailtoProductDetai" Association="Self.SellerDetailtoProductDetai">
+      <End Role="tb_ProductDetai" EntitySet="tb_ProductDetai" />
+      <End Role="tb_SellerDetail" EntitySet="tb_SellerDetail" />
+    </AssociationSet>
+    <AssociationSet Name="SellerDetailtoSeller" Association="Self.SellerDetailtoSeller">
+      <End Role="tb_Seller" EntitySet="tb_Seller" />
+      <End Role="tb_SellerDetail" EntitySet="tb_SellerDetail" />
+    </AssociationSet>
+    <AssociationSet Name="tb_OrderDetail_toi_tb_Order" Association="Self.tb_OrderDetail_toi_tb_Order">
+      <End Role="tb_Order" EntitySet="tb_Order" />
+      <End Role="tb_OrderDetail" EntitySet="tb_OrderDetail" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

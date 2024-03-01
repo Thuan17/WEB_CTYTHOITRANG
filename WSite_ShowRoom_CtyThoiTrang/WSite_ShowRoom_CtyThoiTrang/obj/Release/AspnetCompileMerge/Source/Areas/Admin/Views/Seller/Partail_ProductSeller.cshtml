@@ -1,0 +1,92 @@
+﻿   @model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.SellerCartItem>
+       @using WSite_ShowRoom_CtyThoiTrang.Common
+
+
+    <div class="col-12">
+        <div class="card position-sticky top-0">
+            <div class="p-3 bg-light  ">
+
+                @if (Model != null && Model.Any())
+                {
+                    var i = 1;
+                    var tongtien = decimal.Zero;
+                    <div class="table-responsive">
+                        <table class="table">
+
+                            <thead>
+                                <tr class="text-center">
+
+                                    <th><small>Ảnh </small></th>
+                                    <th><small>Tên </small></th>
+                                    <th><small>Loại</small></th>
+                                    <th><small>Giá</small></th>
+
+                                    <th style="">
+                                        <small>
+                                            Số lượng
+                                        </small>
+                                    </th>
+                                    <th>
+                                        <small>
+                                            Thành tiền
+                                        </small>
+                                    </th>
+                                    <th>
+
+                                    </th>
+
+                                </tr>
+                            </thead>
+
+
+
+                            @foreach (var item in Model)
+                            {
+                                tongtien += item.PriceTotal;
+                                <tbody>
+
+                                    <tr class="text-center" id="trow_@item.ProductId">
+
+                                        <td><img src="@item.ProductImg" width="60" /></td>
+                                        <td>
+                                            <a href="/chi-tiet/@item.Alias-p@(item.ProductId)">
+                                                @item.ProductName
+                                            </a>
+                                        </td>
+                                        <td>@item.CategoryName</td>
+                                        <td>@Common.FormatNumber(item.Price, 0)</td>
+                                        <td> <input type="number" class="form-control Quantity" id="@item.ProductId" value="@item.SoLuong" /></td>
+                                        <th>@Common.FormatNumber(item.PriceTotal, 2)</th>
+                                        <td>
+                                            <a href="#" data-id="@item.ProductId" class="btn btn-sm btn-danger btnDelete"><i class="fas fa-trash-alt"></i></a>
+                                           
+                                    </tr>
+
+                                </tbody>
+
+
+
+                            }
+                        </table>
+
+                        @WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(tongtien, 0)
+
+
+
+                    </div>
+                    <hr>
+                    <a href="/Admin/Seller/CheckOut" class="btn btn-success">Thanh toán</a>
+                }
+                else
+                {
+                    <p class="text-danger">Chưa có sản phẩm !</p>
+                }
+
+
+
+
+
+                @*<button class="btn btn-primary w-100 mt-2 btnXuatHang">Xuất Hàng</button>*@
+            </div>
+        </div>
+    </div>

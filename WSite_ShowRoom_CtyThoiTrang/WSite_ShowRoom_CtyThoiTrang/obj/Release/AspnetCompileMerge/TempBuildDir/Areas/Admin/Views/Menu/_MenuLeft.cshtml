@@ -1,0 +1,309 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_ProductCategory>
+@{
+    Layout = null;
+}
+
+
+<style type="text/css">
+    body {
+        margin-top: 20px;
+        background: #f1f2f7;
+    }
+
+    .thuan {
+        list-style-type: none;
+    }
+
+        .thuan li a {
+            text-decoration: none;
+            color: #808080;
+        }
+
+
+    /*panel*/
+    .panel {
+        border: none;
+        box-shadow: none;
+    }
+
+    .panel-heading {
+        border-color: #eff2f7;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .panel-title {
+        color: #2A3542;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+
+    /*product list*/
+
+    .prod-cat li a {
+        border-bottom: 1px dashed #d9d9d9;
+    }
+
+    .prod-cat li a {
+        color: #3b3b3b;
+    }
+
+    .prod-cat li ul {
+        margin-left: 30px;
+    }
+
+        .prod-cat li ul li a {
+            border-bottom: none;
+        }
+
+            .prod-cat li ul li a:hover,
+            .prod-cat li ul li a:focus,
+            .prod-cat li ul li.active a,
+            .prod-cat li a:hover,
+            .prod-cat li a:focus,
+            .prod-cat li a.active {
+                background: none;
+                color: #ff7261;
+            }
+
+    .pro-lab {
+        margin-right: 20px;
+        font-weight: normal;
+    }
+
+    .pro-sort {
+        padding-right: 20px;
+        float: left;
+    }
+
+    .pro-page-list {
+        margin: 5px 0 0 0;
+    }
+
+    .product-list img {
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+        -webkit-border-radius: 4px 4px 0 0;
+    }
+
+    .product-list .pro-img-box {
+        position: relative;
+    }
+
+    .adtocart {
+        background: #fc5959;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        border: 3px solid #fff;
+        left: 45%;
+        bottom: -25px;
+        position: absolute;
+    }
+
+        .adtocart i {
+            color: #fff;
+            font-size: 25px;
+            line-height: 42px;
+        }
+
+    .pro-title {
+        color: #5A5A5A;
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .product-list .price {
+        color: #fc5959;
+        font-size: 15px;
+    }
+
+    .pro-img-details {
+        margin-left: -15px;
+    }
+
+        .pro-img-details img {
+            width: 100%;
+        }
+
+    .pro-d-title {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .product_meta {
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+        margin: 15px 0;
+    }
+
+        .product_meta span {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .product_meta a,
+        .pro-price {
+            color: #fc5959;
+        }
+
+    .pro-price,
+    .amount-old {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .amount-old {
+        text-decoration: line-through;
+    }
+
+    .quantity {
+        width: 120px;
+    }
+
+    .pro-img-list {
+        margin: 10px 0 0 -15px;
+        width: 100%;
+        display: inline-block;
+    }
+
+        .pro-img-list a {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+    .pro-d-head {
+        font-size: 18px;
+        font-weight: 300;
+    }
+</style>
+
+
+@if (Model != null && Model.Any())
+{
+    @*<ul class="sidebar_categories">
+            @foreach (var item in Model)
+            {
+                if (ViewBag.id == item.ProductCategoryId)
+                {
+                    <li class="active"><a href="/Product/ProductCategory/@item.ProductCategoryId"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>@item.Title</a></li>
+                }
+                else
+                {
+                    <li><a href="/Product/ProductCategory/@item.ProductCategoryId">@item.Title</a></li>
+                }
+            }
+        </ul>*@
+
+
+
+    
+<div class="pt-4">
+    <section class="panel">
+        <div class="panel-body">
+
+            @using (Html.BeginForm("Find", "Seller", FormMethod.Post))
+            {<form id="search-form">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row no-gutters">
+
+                                <div class="col-lg-8 col-md-6 col-sm-12 p-0">
+                                    @Html.TextBox("Search", "", new { @class = "form-control w-100 ", @placeholder = "Mã sản phẩm " })
+                                </div>
+                                <div class="col-lg-1 col-md-3 col-sm-12 p-0">
+                                    <button type="submit" class="btn btn-base" value="Search">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                             class="feather feather-search">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        </svg>
+                                    </button>
+                                    @*<button type="submit" class="btn btn-success " style="width: 70px" value="Search">  <i style="color:white" class="fa-solid fa-magnifying-glass"></i></button>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            }
+
+
+
+
+
+
+
+
+
+            @*<form action="#" method="get">
+                <div class="input-group">
+                    @using (Html.BeginForm("Find", "Seller", FormMethod.Post))
+                    {
+                        @Html.TextBox("Search", "", new { @class = "form-control input-lg", @placeholder = "Mã sản phẩm SP***" })
+                        <button type="submit" class="btn btn-success rounded-end-pill" style="width: 40px" value="Search">  <i class="fas fa-search"></i></button>
+                    }
+                </div>
+            </form>*@
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+    <hr />
+    <section class="panel">
+        <header class="panel-heading">
+            Loại sản phẩm
+        </header>
+        <div class="panel-body">
+            <ul class="thuan" style="list-style-type: none; ">
+                @foreach (var item in Model)
+                {
+                    if (ViewBag.id == item.ProductCategoryId)
+                    {
+                        
+                        <li >
+                            <i class="fa fa-angle-right"></i> <a href="/Product/ProductCategory/@item.ProductCategoryId" style="text-decoration: none; color: #808080; "><span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>@item.Title</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li><a href="/Product/ProductCategory/@item.ProductCategoryId">@item.Title</a></li>
+                    }
+                }
+
+
+            </ul>
+        </div>
+    </section>
+
+
+
+</div>
+
+
+}
+else
+{
+
+
+}
+
+

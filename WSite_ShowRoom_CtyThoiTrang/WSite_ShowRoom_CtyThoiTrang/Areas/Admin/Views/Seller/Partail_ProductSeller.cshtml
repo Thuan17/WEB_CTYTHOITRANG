@@ -1,0 +1,126 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.SellerCartItem>
+@using WSite_ShowRoom_CtyThoiTrang.Common
+
+@*<p>Sản phẩm  <span style="float:right;position:relative"><small>@Model.Count()</small></span></p>*@
+<div class="col-12">
+    <div class="card position-sticky top-0">
+        <div class="p-3 bg-light  ">
+
+            @if (Model != null && Model.Any())
+            {
+                var i = 1;
+                var tongtien = decimal.Zero;
+                <div class="table-responsive">
+                    <table class="table">
+
+                        <thead>
+                            <tr class="text-center">
+
+                                <th><small><b>Ảnh</b> </small></th>
+                                <th><small><b>Tên</b> </small></th>
+                                <th><small><b>Loại</b></small></th>
+                                <th>
+                                    <small>
+                                        <b>
+                                            Size
+                                        </b>
+                                    </small>
+                                </th>
+                                <th><small><b>Giá</b></small></th>
+
+                                <th style="">
+                                    <small>
+                                        <b>
+                                            Số lượng
+                                        </b>
+                                    </small>
+                                </th>
+
+                                <th>
+
+                                </th>
+
+                            </tr>
+                        </thead>
+
+
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                tongtien += item.PriceTotal;
+
+
+                                <tr class="text-center" id="trow_@item.ProductId">
+
+                                    <td><img src="@item.ProductImg" width="60" /></td>
+                                    <td>
+                                        <p>
+                                            @item.ProductName
+                                        </p>
+                                           
+                                        
+                                    </td>
+                                    <td>@item.CategoryName</td>
+                                    <td>
+                                        @if (item.Size == 1)
+                                        {
+
+                                            <p>S</p>
+                                        }
+                                        @if (item.Size == 2)
+                                        {
+                                            <p>M</p>
+
+                                        }
+                                        @if (item.Size == 3)
+                                        {
+                                            <p>XL</p>
+                                        }
+                                    </td>
+                                    <td>@Common.FormatNumber(item.Price, 0)</td>
+                                    <td> <input type="number" class="form-control Quantity" id="@item.ProductId" value="@item.SoLuong" /></td>
+
+
+                                    <td>
+                                        <a href="#" data-id="@item.ProductId" class="btn btn-sm btn-danger btnDelete"><i class="fas fa-trash-alt"></i></a>
+                                    </td>
+
+
+                                </tr>
+
+                            }
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-info"><b>Tổng tiền</b></td>
+                                <td>@Common.FormatNumber(tongtien, 0)</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <a href="/Admin/Seller/CheckOut" class="btn btn-success w-100">Thanh toán</a>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+               
+            }
+            else
+            {
+                <p class="text-danger">Chưa có sản phẩm !</p>
+            }
+
+
+
+
+
+            @*<button class="btn btn-primary w-100 mt-2 btnXuatHang">Xuất Hàng</button>*@
+        </div>
+    </div>
+</div>

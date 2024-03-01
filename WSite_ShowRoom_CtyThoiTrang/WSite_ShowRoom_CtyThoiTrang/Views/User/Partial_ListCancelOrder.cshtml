@@ -1,0 +1,60 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.CanceltItem>
+@if (Model != null && Model.Any())
+{
+    var i = 0;
+    var tongTien = decimal.Zero;
+    <div class="table-responsive shopping-cart">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Tên sản phẩm</th>
+                    <th class="text-center">Số lượng</th>
+                    <th class="text-center">Giá tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    tongTien += item.Price;
+                    <tr>
+                        <td>
+                            <div class="product-item">
+                                <a class="product-thumb" href="#"> <img src="@item.ProductImg" class="img-cart"></a>
+                                <div class="product-info">
+                                    @if (item.Size == 1)
+                                    {
+                                        <h4 class="product-title"><a href="#">@item.ProductName</a></h4><span><em>Size:</em> S</span><span></span>
+                                    }
+                                    else if (item.Size == 2)
+                                    {
+
+                                        <h4 class="product-title"><a href="#">@item.ProductName</a></h4><span><em>Size:</em> M</span><span></span>
+                                    }
+                                    else if (item.Size == 3)
+                                    {
+                                        <h4 class="product-title"><a href="#">@item.ProductName</a></h4><span><em>Size:</em> Xl</span><span></span>
+
+                                    }
+
+                                   
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="count-input">
+                                @item.SoLuong
+                            </div>
+                        </td>
+                        <td class="text-center text-lg text-medium">@WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(item.Price) đ</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="shopping-cart-footer">
+        <div class="column">
+           
+        </div>
+        <div class="column text-lg">Tổng tiền đơn hàng: <span class="text-medium">      @WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(tongTien, 0) đ</span></div>
+    </div>
+}

@@ -1,0 +1,105 @@
+﻿<script>
+    function validateForm() {
+        var sdt = document.getElementById('SDT').value.trim();
+        var password = document.getElementById('Password').value.trim();
+
+        if (!sdt  || !password ) {
+            alert('Vui lòng điền đầy đủ thông tin.');
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+
+@model WSite_ShowRoom_CtyThoiTrang.Models.tb_KhachHang
+@{
+    ViewBag.Title = "Đăng Nhập";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<style>
+    body {
+        background-image: -webkit-gradient(linear, left top, right top, from(#4e63d7), to(#76bfe9)) !important;
+        background-image: linear-gradient(to right, #4e63d7 0%, #76bfe9 100%) !important;
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" integrity="sha256-3sPp8BkKUE7QyPSl6VfBByBroQbKxKG7tsusY2mhbVY=" crossorigin="anonymous" />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-11 mt-60 mx-md-auto">
+                <div class="login-box bg-white pl-lg-5 pl-0">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-md-6">
+                            <div class="form-wrap bg-white">
+                                <h4 class="btm-sep pb-3 mb-5">Đăng Nhập</h4>
+                                @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { onsubmit = " validateForm();" }))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    <form class="form" method="post" action="#">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group position-relative">
+                                                    <span class="zmdi zmdi-account"></span>
+                                                    @Html.TextBoxFor(m => m.SDT, "", new { @class = "form-control", @placeholder = "Nhập Số Điện Thoại Của Bạn" })
+
+                                                    @*<input type="email" id="email" class="form-control" placeholder="Email Address">*@
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group position-relative">
+                                                    <span class="zmdi zmdi-email"></span>
+                                                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
+                                                </div>
+                                            </div>
+                                            <div class="col-12 text-lg-right">
+                                                <h2 class="text-danger">@ViewBag.error</h2>
+                                            </div>
+                                            <div class="col-12 text-lg-right">
+                                                <a href="/Account/Forgotpassword" class="c-black">Quên mật khẩu ?</a>
+                                            </div>
+                                            <div class="col-12 mt-30">
+                                                <button type="submit" id="submit" class="btn btn-lg btn-custom btn-dark btn-block">
+                                                    Đăng Nhập
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                }
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content text-center">
+                                <div class="border-bottom pb-5 mb-5">
+                                    <h3 class="c-black">First time here?</h3>
+                                    <a href="/Account/Register" class="btn btn-custom">Đăng Ký</a>
+                                </div>
+                                <h5 class="c-black mb-4 mt-n1">Đăng ký với</h5>
+                                <div class="socials">
+                                    <a href="#" class="zmdi zmdi-facebook"></a>
+                                    <a href="#" class="zmdi zmdi-twitter"></a>
+                                    <a href="#" class="zmdi zmdi-google"></a>
+                                    <a href="#" class="zmdi zmdi-instagram"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+
+</script>
+</body>
+

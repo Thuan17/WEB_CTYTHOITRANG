@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Giỏ hàng";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_responsive.css">
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<div class="container p-5">
+    <div class="row">
+        <div class=" d-flex ">
+
+            <span><a href="/Home/Index">Home</a></span>/@ViewBag.Title
+
+        </div>
+        <div class="col-md-12" id="load_data123">
+            @Html.Action("Partial_ItemCart", "TestCart")
+        </div>
+        @if (ViewBag.Cart != null)
+        {
+            <div class="col-md-12">
+                <div class="text-right">
+                    <a href="#" class="btn btn-danger btnDeleteAll">Xóa</a>
+                    <button type="button" class="btn btn-primary btn-dat-hang">Đặt Hàng</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Content/assets/js/categories_custom.js"></script>
+    <script>
+        $('body').on('change', '#SelectAll', function () {
+            var checkStatus = this.checked;
+            var checkbox = $(this).parents('.card-body').find('tr td input:checkbox');
+            checkbox.each(function () {
+                this.checked = checkStatus;
+                if (this.checked) {
+                    checkbox.attr('selected', 'checked');
+                } else {
+                    checkbox.attr('selected', '');
+                    $('#show_success').html("Vui lòng chọn sản phẩm");
+                }
+            });
+        });
+         
+
+
+
+    </script>
+
+
+}

@@ -1,0 +1,105 @@
+﻿@model WSite_ShowRoom_CtyThoiTrang.Models.SellerPay
+@using (Ajax.BeginForm("CheckOutClient", "Shoppingcart", new AjaxOptions
+{
+    HttpMethod = "POST",
+    UpdateTargetId = "load_data",
+    OnSuccess = "OnSuccessCO",
+    OnFailure = "OnFailure",
+    OnBegin = "OnBeginCO"
+
+}, new { @Id = "myForm" }))
+{
+    <script>
+        function OnBeginCO() {
+            $('#btnCheckOut').attr("disabled", "disabled");
+            $('#load_send').html('<h2>Đang gửi....</h2>');
+        }
+        function OnSuccessCO(res) {
+            if (res.Success) {
+                if (res.Code == 1) {
+                    location.href = "/admin/seller/CheckOutSuccess";
+                }
+               
+            }
+            else {
+                if (res.Code == -7) {
+                    Swal.fire({
+                        title: "Oops",
+                        text: "Số lượng không đủ !",
+                        icon: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#3085d6",
+                        cancelButtonColor: "#d33",
+                        confirmButtonText: "Quay lại"
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+
+                            location.href = "/admin/seller/CheckOut";
+                        }
+                    });
+
+                }
+                if (Code == -2) {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Vui lòng không bỏ trống",
+                    });
+                }
+                if (Code == -3) {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Không tồn tại sản phẩm ",
+                    });
+                }
+
+            }
+        }
+                        
+    </script>
+
+    @Html.AntiForgeryToken()
+  
+
+
+
+    <div class="form-group">
+        
+
+        @if (ViewBag.Id != null)
+        {
+            
+            <input type="hidden" id="Id" name="idKhachHang" value="@ViewBag.Id" />
+        }
+    </div>
+
+
+
+
+
+
+    <div class="form-group">
+        <label>Hình thức thanh toán</label>
+        <select class="form-control" id="drTypePayment" name="TypePayment">
+            <option value="1" selected>Tiền mặt</option>
+            <option value="2" id="chuyenkhoan">Chuyển khoản</option>
+
+        </select>
+    </div>
+    <div class="form-group" id="load_form_payment" style="display:none;">
+        <h4> <label>Chọn phương thức thanh toán:</label><br /></h4>
+        <h5>Cách 1: Chuyển hướng sang VNPAY chọn phương thức thanh toán</h5>
+        <label><input type="checkbox" class="TypePaymentVN" name="TypePaymentVN" value="0" checked /> Cổng thanh toán VNPAYQR </label>
+        <h5>Cách 2: Tách phương thức thanh toán tại site của Merchant</h5>
+        <label><input type="checkbox" class="TypePaymentVN" name="TypePaymentVN" value="1" /> Thanh toán qua ứng dụng hỗ trợ VNPAYQR </label><br />
+        <label><input type="checkbox" class="TypePaymentVN" name="TypePaymentVN" value="2" /> ATM-Tài khoản ngân hàng nội địa </label><br />
+        <label><input type="checkbox" class="TypePaymentVN" name="TypePaymentVN" value="3" /> Thanh toán qua thẻ quốc tế </label><br />
+    </div>
+
+    <div class="form-group" id="load_send"></div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-block btn-success " id="btnCheckOut">Bán hàng</button>
+
+    </div>
+}

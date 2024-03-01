@@ -1,0 +1,74 @@
+﻿@model WSite_ShowRoom_CtyThoiTrang.Models.tb_KhachHang
+
+@{
+    ViewBag.Title = "Chỉnh sửa hồ sơ";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div class="card pt-5">
+    <div class="card-body">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.IdKhachHang)
+
+            <div class="form-group">
+                <h4>Số điện thoại</h4>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.SDT, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.SDT, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h4>Tên </h4>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.TenKhachHang, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TenKhachHang, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h4>Email</h4>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group" style="display:none;">
+
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Birthday, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Birthday, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h4>Địa chỉ</h4>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+
+
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    @*<input type="submit" value="Save" class="btn btn-default" />*@
+                    <button type="submit" class="btn btn-success">Lưu lại</button>
+                </div>
+            </div>
+       
+    }
+    </div>
+</div>
+
+
+

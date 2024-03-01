@@ -1,0 +1,129 @@
+﻿@model WSite_ShowRoom_CtyThoiTrang.Models.Admin_WareHouse_Export_ToKen
+
+@using (Ajax.BeginForm("TestAdd", "Product", new AjaxOptions
+{
+    HttpMethod = "POST",
+    UpdateTargetId = "load_data",
+    OnSuccess = "OnSuccessCO",
+    OnFailure = "OnFailure",
+    OnBegin = "OnBeginCO"
+}, new { @Id = "myForm" }))
+{
+    <script>
+        function OnBeginCO() {
+            $('#btnOutOrder').attr("disabled", "disabled");
+        }
+        function validateForm() {
+            var codeValue = document.getElementById('Code').value.trim();
+            var khoValue = document.getElementById('Idkho').value;
+
+            var codeError = document.getElementById('code-error');
+            var khoError = document.getElementById('Idkho-error');
+
+            // Đặt lại thông báo lỗi
+            codeError.textContent = 'Không bỏ trống';
+            khoError.textContent = 'Không thấy kho';
+        }
+
+        function OnSuccessCO(res) {
+            if (res.Success) {
+                if (res.Code == 1) {
+
+                    location.reload(true);
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: "top-end",
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                            toast.onmouseenter = Swal.stopTimer;
+                            toast.onmouseleave = Swal.resumeTimer;
+                        }
+                    });
+
+                    Toast.fire({
+                        icon: "success",
+                        title: "Xuất đơn hàng thành công"
+                    });
+
+                } else {
+                }
+            }
+            else {
+                if (res.Code == -2) {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Lỗi tìm...",
+                        text: "Không tìm thấy đơn hàng",
+                        /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                    });
+
+                }
+                if (res.Code == -3) {
+                    Swal.fire({
+                        icon: "warning",
+                        title: "Lỗi tìm...",
+                        text: "Đơn hàng dã hủy trên hệ thống ! Vui lòng kiểm tra lại ",
+                        /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                    });
+                }
+                if (res.Code == -4) {
+                    Swal.fire({
+                        icon: "question",
+                        title: "Lỗi tìm...",
+                        text: "Đơn hàng chưa được xác nhận ",
+                        /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                    });
+
+                }
+                if (res.Code == -5) {
+                    Swal.fire({
+                        icon: "info",
+                        title: "Lỗi tìm...",
+                        text: "Mã hàng được trả về ",
+                        /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                    });
+                }
+                if (res.Code == -6) {
+                    Swal.fire({
+                        icon: "warning",
+                        title: "Lỗi tìm...",
+                        text: "Đơn hàng lập lại 2 lần ",
+                        /*footer: '<a href="#">Why do I have this issue?</a>'*/
+                    });
+                }
+            }
+
+        }
+
+
+
+
+
+
+
+    </script>
+    @Html.AntiForgeryToken()
+    <h5>Thông tin xuất đơn hàng</h5>
+    <h4 class="Text-danger">@ViewBag.Error</h4>
+    <div class="form-group">
+        <label>Mã Đơn hàng </label>
+        <input type="text" name="Code" id="Code" required class="form-control" autocomplete="off" placeholder="Mã Đơn hàng DH**** " />
+        @Html.ValidationMessageFor(model => model.Code, null, new { @class = "text-danger" })
+        <span id="code-error" class="text-danger"></span>
+    </div>
+
+    @Html.DropDownListFor(model => model.Idkho, (IEnumerable<SelectListItem>)ViewBag.Kho, "Chọn Kho", new { @class = "form-control" })
+    @Html.ValidationMessageFor(model => model.Idkho, null, new { @class = "text-danger" })
+
+
+    <div class="row">
+        <div class="col-1"></div>
+
+        <div class="col-10 d-grid gap-2 col-10 mx-auto"><button type="submit" class="btn btn-danger btnOutOrder ">Xuất đơn hàng</button></div>
+
+        <div class="col-1"></div>
+    </div>
+
+}

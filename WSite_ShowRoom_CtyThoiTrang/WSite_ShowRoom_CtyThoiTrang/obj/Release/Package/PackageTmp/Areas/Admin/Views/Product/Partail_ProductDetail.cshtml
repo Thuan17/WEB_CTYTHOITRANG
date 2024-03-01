@@ -1,0 +1,37 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_ProductDetai>
+
+
+@if (ViewBag.Title != null)
+{
+    if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            if (item.Size == 1)
+            {
+                <h6>
+                    Size:M <samp>Số lượng : @item.Quantity</samp>
+                </h6>
+            }
+            else if (item.Size == 2)
+            {
+                <h6>
+                    Size:L <samp>Số lượng : @item.Quantity</samp>
+                </h6>
+            }
+            else
+            {
+                <h6>
+                    Size: XL <samp>Số lượng : @item.Quantity</samp>
+                </h6>
+            }
+        }
+    }
+}
+
+else
+{
+    <p class="text-danger">Sản phẩm chưa có Size</p>
+    <a href="/admin/Product/AddProductDetail/@ViewBag.Id" class="btn btn-sm btn-primary ">Thêm Size</a>
+}
+

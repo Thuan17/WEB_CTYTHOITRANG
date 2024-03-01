@@ -1,0 +1,20 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_ProductCategory>
+
+@if(Model.Any() && Model != null) 
+{
+    foreach(var item in Model) 
+    {
+        <li>
+          
+            <a href="/Product/ProductCategory/@item.ProductCategoryId">@item.Title</a>
+        </li>
+    }
+}
+else 
+{
+    <p>Chưa có sản phẩm</p>
+}
+
+
+
+

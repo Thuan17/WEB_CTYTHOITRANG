@@ -1,0 +1,39 @@
+﻿
+
+@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_Products>
+@{
+    //ViewBag.Title = "Phan_SanPhamId";
+}
+
+@foreach (var item in Model)
+{
+    <h6 class="product_name"><a href="/chi-tiet/@item.Alias/@(item.ProductId)">@item.Title</a></h6>
+    @*<a href="/Product/Detail/ @item.ProductId">@item.Title</a>*@
+    <ul class="pro-item">
+
+        <li>
+
+            <div class="products">
+
+
+                <img src="~/Photo/SanPham/@item.Image" />
+                <br />
+                <div>
+
+                </div>
+
+                <br />
+                <br />
+                <b class="price text-danger">Giá Tiền:@WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(item.Price)  Vnđ</b>
+                <br />
+            </div>
+
+        </li>
+        <li>
+            <a href="javascript:void(0);" class="btn btn-success btn-lg btnAddToCart" data-id="@item.ProductId">Thêm Vào Giỏ Hàng </a>
+
+        </li>
+    </ul>
+
+
+}

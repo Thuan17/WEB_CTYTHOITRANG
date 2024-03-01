@@ -1,0 +1,32 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_OrderDetail>
+@if (Model != null && Model.Any())
+{
+    int i = 1;
+    <table class="table mb-0">
+        <thead>
+            <tr>
+                <th class="text-center">STT</th>
+                <th class="border-gray-200 text-center" scope="col">Tên sản phẩm</th>
+                <th class="border-gray-200 text-center" scope="col">Giá</th>
+                <th class="border-gray-200 text-center" scope="col">Số lượng</th>
+                <th class="border-gray-200 text-center" scope="col">Tổng tiền</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+           
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-center">@i</td>
+                        <td class="text-center">@item.tb_ProductDetai.tb_Products.Title</td>
+                        <td class="text-center">@WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(item.Price)</td>
+                        <td class="text-center">@item.Quantity</td>
+                        <td class="text-center">@WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(item.Price*item.Quantity, 0)</td>
+
+                    </tr>
+                    i++;
+                }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,83 @@
+﻿@model WSite_ShowRoom_CtyThoiTrang.Models.tb_Products
+@{
+    ViewBag.Title = "Chi tiết sản phẩm";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/categories_responsive.css">
+
+@if (Model != null)
+{
+    <div class="container ">
+        <div class="product-content product-wrap clearfix product-deatil ">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    @if (Model.tb_ProductImage != null && Model.tb_ProductImage.Any())
+                    {
+                        @Html.Action("Partial_ImgByProduct", "Product", new { id = Model.ProductId })
+                    }
+
+                </div>
+                <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
+                    <h2> @Model.Title</h2>
+                    @Html.Action("Partial_ProductDetail", "Product", new { id = Model.ProductId })
+                    <h3 class="">
+                        @if (Model.PriceSale > 0)
+                        {
+                            <ul class="p-sm-2">
+                                <li>
+                                    <small> Giá Gốc :</small>
+                                    <small class="text-decoration-line-through"> @WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(Model.Price) đ</small>
+                                </li>
+                                <li>
+
+                                    <small class="text-danger">Giá Khuyến Mãi: @WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(Model.PriceSale) đ</small>
+
+
+                                </li>
+                            </ul>
+                        }
+                        else
+                        {
+                            <ul class="p-sm-2">
+                                <li>
+                                    <small>Giá Gốc : @WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(Model.Price)đ</small>
+                                </li>
+                            </ul>
+                        }
+                    </h3>
+                    <hr />
+           
+
+                    <table class="table table-bordered my-3">
+                        <tbody>
+                            <tr>
+                                <th class=""><i class="fas fa-money"></i>  Hàng chính hãng, chứng nhận an toàn</th>
+                            </tr>
+                            <tr>
+                                <th class=""><i class="fas fa-cart"></i>  Miễn phí giao hàng toàn quốc đơn trên 500K</th>
+                            </tr>
+                            <tr>
+                                <th class=""><i class="fas fa-phone"></i>  Liên hệ hỗ trợ: 1900.1208</th>
+                            </tr>
+                            <tr>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p> Không có bản ghi nào !</p>
+}
+
+@section scripts{
+    <script src="~/Content/assets/js/categories_custom.js"></script>
+}

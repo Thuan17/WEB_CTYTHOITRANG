@@ -1,0 +1,66 @@
+﻿@model PagedList.PagedList<WSite_ShowRoom_CtyThoiTrang.Models.tb_Seller>
+@using PagedList.Mvc
+@if (Model != null && Model.Any())
+{
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="SelectAll" /></th>
+                <th class="text-center">STT</th>
+                <th class="text-center">Mã Hóa Đơn</th>
+                <th class="text-center">Tên nhân viên</th>
+                <th class="text-center">Ngày Xuất</th>
+                <th style="width:250px;"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                var i = ((ViewBag.Page - 1) * ViewBag.PageSize) + 1;
+                foreach (var item in Model)
+                {
+
+                    <tr id="trow_@item.SellerId">
+                        <td><input type="checkbox" class="cbkItem" value="@item.SellerId" /></td>
+                        <td class="text-center">@i</td>
+                        <td class="text-center">
+                            @item.Code
+                        </td>
+                        <td class="text-center">
+                            @item.CreatedBy
+                        </td>
+                        <td class="text-center">
+                            @item.CreatedDate.ToString("dd/MM/yyyy")
+                        </td>
+                        <td>
+                            <a href="/admin/Seller/DetailSeller/@item.SellerId" class="btn btn-sm btn-success">Xem</a>
+                            @*<a href="/admin/Staff/Details/@item.MSNV.Trim()" class="btn btn-sm btn-success">Xem</a>
+                                <a href="/admin/Staff/edit/@item.MSNV" class="btn btn-sm btn-primary">Sửa</a>
+                                <a href="#" data-id="@item.MSNV" class="btn btn-sm btn-danger btnDelete">Xóa</a>*@
+                        </td>
+                    </tr>
+                    i++;
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="4">Không có bản ghi nào!!!</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6" style="text-align:right;">
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+        </div>
+    </div>
+}
+else
+{
+    <p>Không có bản ghi nào !</p>
+}
+
+
+

@@ -1,0 +1,41 @@
+﻿@using (Html.BeginForm("FindBill", "Seller", FormMethod.Post))
+{
+    <div class="input-group form-group form-inline d-flex">
+
+        @Html.TextBox("Search", "", new { @class = "form-control form-control rounded-start-pill", @placeholder = "Mã hóa đơn HD****" })
+        <button type="submit" class="btn btn-success rounded-end-pill" style="width: 70px" value="Search">  <i style="color:white" class="fa-solid fa-magnifying-glass"></i></button>
+
+    </div>
+
+
+}
+
+
+
+
+
+
+<div id="searchResult"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#searchForm").submit(function (e) {
+            e.preventDefault();
+
+           
+            var searchValue = $("#searchInput").val();
+
+          
+            $.ajax({
+                url: '@Url.Action("Partial_CheckBill", "Seller")',
+                type: 'POST',
+                data: { search: searchValue },
+                success: function (result) {
+                    
+                    $("#searchResult").html(result);
+                }
+            });
+        });
+    });
+</script>

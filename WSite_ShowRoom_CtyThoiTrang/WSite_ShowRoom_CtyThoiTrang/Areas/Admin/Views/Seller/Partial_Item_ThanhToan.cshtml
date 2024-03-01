@@ -1,0 +1,66 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.SellerCartItem>
+@using WSite_ShowRoom_CtyThoiTrang.Common
+@if (Model != null && Model.Any())
+{
+    @*<p>Sản phẩm  <span style="float:right;position:relative"><small>@Model.Count()</small></span></p>*@
+    var i = 0;
+    var tongtien = decimal.Zero;
+    <div style="border:1px solid #808080;">
+        <table class="table">
+            <thead>
+                <tr class="text-center"> 
+                    
+                    <th>Hình ảnh</th>
+                    <th>Tên sản phẩm</th>
+                   <th >Size</th>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+
+                    tongtien += item.PriceTotal;
+                    <tr class="text-center">
+                        <td class="w-25"><img src="@item.ProductImg" class="w-75"></td>
+                        <td>@item.ProductName</td>
+                        <td>
+                            @if (item.Size == 1)
+                            {
+
+                                <p>S</p>
+                            }
+                            @if (item.Size == 2)
+                            {
+                                <p>M</p>
+
+                            }
+                            @if (item.Size == 3)
+                            {
+                                <p>XL</p>
+                            }
+                        </td>
+                        <td> <input type="number" class="form-control QuantityPay" id="@item.ProductId" value="@item.SoLuong" /></td>
+                        <td>@Common.FormatNumber(item.Price, 0)</td>
+                    </tr>
+                }
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="text-info"><b>Tổng tiền</b></td>
+                    <td>@Common.FormatNumber(tongtien, 0)</td>
+                </tr>
+            </tbody>
+           
+           
+        </table>
+    </div>
+}
+else
+{
+    <p class="text-danger">Không có bản ghi nào</p>
+}
+

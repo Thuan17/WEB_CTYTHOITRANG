@@ -1,0 +1,60 @@
+﻿<h2>Chào mừng Nhân vien quản lý kho</h2>
+<section class="content">
+
+
+
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="card">
+                    <div class="card-header p-2">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Tất cả</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Xuất kho</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Nhập kho</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Success" data-toggle="tab"> Hàng trả về</a></li>
+
+                        </ul>
+                    </div><!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div class="active tab-pane" id="activity">
+
+                                Tất cả
+
+                            </div>
+                            <div class="tab-pane" id="timeline">
+
+                                @Html.Action("test", "WareHouse")
+
+
+
+                            </div>
+                            <div class="tab-pane" id="settings">
+                                Nhập kho
+                                @Html.Action("ImportWareHouse", "WareHouse")
+
+                            </div>
+
+                            <div class="tab-pane" id="Success">
+                                Hoàn thành
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+@section scripts{
+    <script src="~/Content/assets/js/categories_custom.js"></script>
+}
+

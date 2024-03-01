@@ -1,0 +1,118 @@
+﻿@model WSite_ShowRoom_CtyThoiTrang.Models.tb_ChucNang
+@{
+    ViewBag.Title = "Nhân viên trong chức vụ";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+@section naviheader{
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Chi tiết chưc vụ</a>
+        </li>
+    </ul>
+}
+
+
+<section class="content">
+
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Chi tiết đơn hàng</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Id chức năng</label>
+                        <p class="form-control">@Model.IdChucNang</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Tên chức năng</label>
+                        <p class="form-control">@Model.TenChucNang</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Mã chức năng</label>
+                        <p class="form-control">@Model.MaChucNang</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Tạo bởi</label>
+                        <p class="form-control">@Model.Createby</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Ngày tạo</label>
+                        <p class="form-control">@*@Model.CreatedDate.ToString("dd/MM/yyyy"*@)</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Ngày chỉnh sửa</label>
+                        <p class="form-control">
+
+                            @if (Model.ModifiedDate == null) 
+                            {
+                                <span>Chưa qua chỉnh sửa</span>
+                            }else
+                            {
+                                //Model.Modifeby.ToString("dd/MM/yyyy")
+                            }
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Người chỉnh sửa</label>
+                        <p class="form-control">
+                            @if (Model.Modifeby == null)
+                            {
+                                <span>Chưa qua chỉnh sửa</span>
+                            }
+                            else
+                            {
+                                //Model.Modifeby.ToString("dd/MM/yyyy")
+                            }
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2>Danh sách sản phẩm</h2>
+                </div>
+                <div class="col-12">
+                    @Html.Action("StafIdRole", "Role", new { id = Model.IdChucNang })
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer">
+
+        </div>
+
+    </div>
+
+
+</section>

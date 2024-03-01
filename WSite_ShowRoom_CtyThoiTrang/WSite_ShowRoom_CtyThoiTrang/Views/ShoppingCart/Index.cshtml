@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Giỏ hàng";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+
+            <!-- Breadcrumbs -->
+
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+
+                <span><a href="index.html">Home</a></span>/@ViewBag.Title
+
+            </div>
+
+            <!-- Sidebar -->
+            <!-- Main Content -->
+
+            <div class="row">
+                <div class="col-md-12" id="load_data">
+                    @Html.Action("Partial_ItemCart", "ShoppingCart")
+                </div>
+                @if (ViewBag.Cart!= null)
+                {
+                    <hr />
+                    <div class="col-md-12">
+                        <div class="text-right">
+                            <a href="#" class="btn btn-danger btnDeleteAll">Xóa</a>
+                            <a href="/ShoppingCart/CheckOut" class="btn btn-success">Thanh toán</a>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Content/assets/js/categories_custom.js"></script>
+}

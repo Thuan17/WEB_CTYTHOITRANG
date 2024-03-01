@@ -1,0 +1,40 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.ShoppingCartNoneClientItem>
+@{
+    Layout = null;
+}
+@if (Model != null && Model.Any())
+{
+    <h2>Giỏ Hàng</h2><span>@Model.Count()</span>
+    var i = 0;
+    var tongTien = decimal.Zero;
+    <div class="">
+        <table class="table">
+            @foreach (var item in Model)
+            {
+                tongTien += item.PriceTotal;
+                <tr>
+                    <td>
+                        @item.ProductName
+                    </td>
+                    <td>
+                        @item.SoLuong
+                    </td>
+                    <td>
+                        @WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(item.Price, 0)
+                    </td>
+
+                </tr>
+            }
+            <tr>
+                <td>Tổng tiền</td>
+                <td></td>
+                <td>
+                    @WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(tongTien, 0)
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+}

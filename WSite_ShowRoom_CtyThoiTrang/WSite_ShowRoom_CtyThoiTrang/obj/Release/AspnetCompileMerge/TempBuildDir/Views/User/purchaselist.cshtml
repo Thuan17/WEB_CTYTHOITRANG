@@ -1,0 +1,27 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.CanceltItem>
+
+@{
+    ViewBag.Title = "purchaselist";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>purchaselist</h2>
+
+@if (Model != null && Model.Any())
+{
+    <h2>Giỏ Hàng</h2><span>@Model.Count()</span>
+   
+    <div class="">
+       
+       @foreach(var item in Model) 
+       {
+        <p>@item.SoLuong</p>
+        <p>@item.ProductName</p>
+       }
+             
+       
+    </div>
+
+
+
+}

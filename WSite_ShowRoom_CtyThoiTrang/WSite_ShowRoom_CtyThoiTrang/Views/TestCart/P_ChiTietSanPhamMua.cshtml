@@ -1,0 +1,113 @@
+﻿
+@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.ShoppingCartItem>
+@using WSite_ShowRoom_CtyThoiTrang.Common
+<div class="container  product_section_container">
+    <div class="col-md-12 col-sm-12 content">
+        <div class="row">
+            @*<div class="col-md-12">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Cart</li>
+                    </ol>
+                </div>*@
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-info panel-shadow">
+                    @*<div class="panel-heading">
+                            <h3>
+                                <img class="img-circle img-thumbnail" src="https://bootdey.com/img/Content/user_3.jpg">
+                                Matew darfkmoun
+                            </h3>
+                        </div>*@
+                    @if (Model != null && Model.Any())
+                    {
+                        var i = 0;
+                        var tongTien = decimal.Zero;
+
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Hình ảnh</th>
+                                            <th>Tên sản phẩm</th>
+                                            <th>Loại sản phẩm</th>
+                                            <th>Số lượng</th>
+                                            <th>Giá</th>
+                                            <th>Tổng Tiền</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model)
+                                        {
+
+                                            tongTien += item.PriceTotal;
+                                            <tr>
+                                                <td>
+                                                    @(i+1)
+                                                </td>
+                                                <td><img src="@item.ProductImg" class="img-cart"></td>
+                                                <td>
+                                                    <a href="/chi-tiet/@item.Alias-p@(item.ProductId)">
+                                                        @item.ProductName
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    @item.CategoryName
+                                                </td>
+                                                <td>
+                                                    <form class="form-inline">
+                                                        <input type="number" class="form-control" id="Quantity_@item.ProductId" value="@item.SoLuong" />
+
+                                                    </form>
+                                                </td>
+                                                <td>@Common.FormatNumber(item.Price) vnđ</td>
+                                                <td>@Common.FormatNumber(item.PriceTotal) vnđ</td>
+                                                <td>
+                                                    <a href="#" data-id="@item.ProductId" class="btn btn-sm btn-primary btnUpdate"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#" data-id="@item.ProductId" class="btn btn-sm btn-danger btnDelete"><i class="far fa-trash-alt"></i></a>
+                                                </td>
+                                            </tr>
+                                            i++;
+                                            <tr>
+                                                <td colspan="8">
+                                                    &nbsp;
+
+                                                </td>
+                                            </tr>
+                                            <hr />
+
+                                        }
+
+                                        <tr>
+
+                                            <td colspan="4" class="text-right">Tổng tiền sản phẩm</td>
+
+                                            <td>@Common.FormatNumber(tongTien, 0) vnđ</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+
+                        <img src="//theme.hstatic.net/200000420363/1001162486/14/empty_cart.png?v=240" alt="Không có sản phẩm nào trong giỏ hàng của bạn">
+
+
+                        <span>Bạn chưa có sản phẩm nào. Vui long quay lại trang <a href="/home/index">sản phẩm</a> để mua hàng.</span>
+
+                    }
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

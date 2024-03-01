@@ -1,0 +1,31 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_ProductCategory>
+@if (Model != null && Model.Any())
+{
+    <div class="row">
+        <div class="section_title new_arrivals_title">
+            <h2>New Arrivals</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center p-2">
+        <div class="nav navbar-brand justify-content-center">
+            <ul class="d-flex nav-item">
+                <li class=" active is-checked nav-link" data-filter="*"> <a style="text-decoration:none; color:black" href="#">Tat Ca</a></li>
+                @foreach (var item in Model)
+                {
+                    <li class="grid_sorting_button nav-link " data-filter=".@item.Alias"><a style="text-decoration: none; color: black; " href="#">@item.Title</a></li>
+                }
+
+                @*<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".women">women's</li>
+                    <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".accessories">accessories</li>
+                    <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".men">men's</li>*@
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
+                @Html.Action("Partial_ProByIdCate", "Product")
+            </div>
+        </div>
+    </div>
+}

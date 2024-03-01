@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @*<link href="~/Content/CSS/navLayout.css" rel="stylesheet" />*@
+
+
+
+
+
+    @*===============================================================*@
+
+    @*CSS*@
+
+  
+
+    <link href="~/Content/CSS/CSSLayout.css" rel="stylesheet" />
+
+
+
+    @*Icon*@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+
+    @*test*@
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    @*Bootstrap*@
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    
+
+    @*Web*@
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="icon" href="~/Photo/yame-f-logo-white.png" style="border-radius:20px;height:20px;" />
+
+
+</head>
+<body>
+
+
+    <div id="wrapper">
+        <header>
+            <div class="inder-header">
+                <nav>
+                    <a class="logo" href="/Home/Index">
+                        KTA MODE
+                    </a>
+                    <ul id="main-menu">
+                        <li> <a href="#"> Trang Chủ </a> </li>
+                        <li>
+                            <a href="/product/index"> Sản Phẩm </a>
+                            @*<ul class="sub-menu">
+                                    <li><a href="#">Menu 1.1</a></li>
+                                    <li><a href="#">Menu 1.1</a></li>
+                                    <li><a href="#">Menu 1.1</a></li>
+                                    <li><a href="#">Menu 1.1</a></li>
+                                </ul>*@
+                        </li>
+                        <li> <a href="#"> Giới Thiệu </a></li>
+                        <li> <a href="#"> Trang Nội Dung </a></li>
+                        <li>
+
+                            @if (Session["SDT"] != null)
+                            {
+                                <p>
+                                    @Session["TenKhachHang"]
+                                </p>
+                                <a href="~/Account/LogOut" class="text-black"><i class="far fa-sign-out-alt"></i></a>
+                            }
+                            else
+                            {
+                                <a class=" text-black" href="/Account/Login"><i class="fas fa-user"></i></a>
+                            }
+                        </li>
+                        <li>
+                            <a href="/testCart/index">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span id="checkout_items" class="checkout_items text-black">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-1 my-lg-0">
+                        <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-1 my-sm-0" type="submit">Search</button>
+                    </form>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+
+
+
+    <main>
+        <div>
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer>
+        <div class="row " style="background-color:#808080">
+            <div class="col-6 col-lg-3 text-center">
+                <i class="fas fa-envelope-open-text w-75"></i>
+                <h3> <b>Hổ trợ 24/7</b></h3>
+                <p>Hotline hỗ trợ 1900.000.XXX</p>
+            </div>
+            <div class="col-6 col-lg-3 text-center">
+                <i class="fas fa-box"></i>
+                <h3> <b>Giao hàng miễn phí</b></h3>
+                <p>Thời gian giao hàng nhanh chóng, từ 3 - 5 ngày làm việc</p>
+            </div>
+            <div class="col-6 col-lg-3 text-center">
+                <i class="fas fa-credit-card"></i>
+                <h3> <b>Thanh toán đa dang</b></h3>
+                <p>Chấp nhận thanh toán COD, Momo, Banking</p>
+            </div>
+            <div class="col-6 col-lg-3 text-center">
+                <i class="fas fa-undo-alt"></i>
+                <h3> <b>Đổi trả dễ dàng</b></h3>
+                <p>Thời gian trả hàng lên tới 30 ngày</p>
+            </div>
+        </div>
+        <div class="row p-2 text-black " style="border-bottom:1px solid black">
+            <div class="col-6 p-4">
+                <h3>
+                    <b class="text-xl-center">Kết nối với chung tôi</b>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-youtube"></i>
+                </h3>
+            </div>
+        </div>
+        <div class="row text-black p-4" style="border-bottom:1px solid black">
+            <div class="col">
+                <h3><b>Về KTA MODE</b></h3>
+                <p>
+                    Với các giải pháp công nghệ tốt nhất, Haravan là tất cả những gì bạn cần để xây dựng thương hiệu online, thành công trong bán lẻ và marketing đột phá.
+                </p>
+                <p>
+                    <i class="fas fa-map-marker-alt"> Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.</i>
+                </p>
+                <p>
+                    <i class="fas fa-phone"> 1900.000.XXX</i>
+                </p>
+                <p>
+                    <i class="fas fa-envelope">  hi@luxe-mode.abc</i>
+                </p>
+                <h3> Phương thức thanh toán</h3>
+                <p> </p>
+            </div>
+            <div class="col">
+                <h3> <b>Hỗ trợ khách hàng</b></h3>
+                <ul>
+                    <li> Sản phẩm khuyến mãi</li>
+                    <li> Sản phẩm nổi bật</li>
+                    <li> Tất cả sản phẩm</li>
+                </ul>
+                <h3> <b>Phương thức vận chuyển</b></h3>
+            </div>
+            <div class="col">
+                <h3><b>Liên Kết</b></h3>
+                <ul>
+                    <li> <a href="#" style="text-decoration:none" vv> Trang chủ</a></li>
+                    <li> <a href="#"> Sản phẩm</a></li>
+                    <li> <a href="#"> Trang sản phẩm</a></li>
+                    <li> <a href="#"> Giới thiệu</a></li>
+                    <li> <a href="#"> Trang nội dung</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3> <b>Chính sách</b></h3>
+                <ul>
+                    <li><a href="#"> Tìm kiếm</a></li>
+                    <li><a href="#"> Tìm kiếm</a></li>
+                    <li><a href="#"> Tìm kiếm</a></li>
+                    <li><a href="#"> Tìm kiếm</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center p-2">
+            <div class="row  text-center text-black">
+                <h3 class="text-center">Về KTA MODE</h3>
+                <p>Mỗi một người phụ nữ đều mang trong mình nét đẹp riêng & xứng đáng được ngưỡng mộ, được tôn vinh và được tự tin với chính con người mình. Phụ nữ luôn xứng đáng với những điều trọn vẹn nhất cho cuộc sống của mình: Hạnh phúc trọn vẹn, vẻ đẹp trọn vẹn và còn nhiều hơn thế. The Swan hơn cả một thương hiệu trang sức, mà còn là đại diện cho một phong cách sống của những giá trị hoàn mỹ xứng đáng nhất dành cho phụ nữ.</p>
+                <p>"TRANG SỨC The Swan – CHO PHỤ NỮ LUÔN TRỌN VẸN"</p>
+            </div>
+        </div>
+    </footer>
+
+    @*<div>
+            @RenderBody()
+        </div>*@
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/Layout/JSLayout.js"></script>
+
+
+
+    <script src="~/Content/assets/styles/bootstrap4/popper.js"></script>
+    <script src="~/Content/assets/styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="~/Content/assets/plugins/Isotope/isotope.pkgd.min.js"></script>
+    <script src="~/Content/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <script src="~/Content/assets/plugins/easing/easing.js"></script>
+    <script src="~/Content/assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="~/Content/assets/js/custom.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    @*===============================================================*@
+    <script src="~/Scripts/autoNumeric-1.9.45.js"></script>
+
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+
+    <script src="~/Scripts/JsShop.js"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+ </html>

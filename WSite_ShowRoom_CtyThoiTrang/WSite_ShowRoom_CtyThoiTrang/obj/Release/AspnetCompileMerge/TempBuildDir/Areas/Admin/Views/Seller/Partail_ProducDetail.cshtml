@@ -1,0 +1,50 @@
+﻿
+
+@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_ProductDetai>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+@if (Model != null)
+{
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <section id="team" class="section bg-gray-100">
+                <div class="container">
+
+                    <div class="container bootstrap snippets bootdey">
+                        <div class="row">
+
+                            @foreach (var item in Model)
+                            {
+                                if (item.Size == 1)
+                                {
+                                    <button type="button" class="btn btn-success btn-lg btn3d  btnAddList" data-id="@item.ProductDetai"><small><span class="glyphicon glyphicon-ok">Số lượng : @item.Quantity</span> Size:M</small></button>
+                                }
+                                else if (item.Size == 2)
+                                {
+                                    <button type="button" class="btn btn-success btn-lg btn3d  btnAddList" data-id="@item.ProductDetai"><small><span class="glyphicon glyphicon-ok">Số lượng : @item.Quantity</span> Size:L</small></button>
+                                }
+                                else
+                                {
+
+                                    <button type="button" class="btn btn-success btn-lg btn3d   btnAddList" data-id="@item.ProductDetai"><small><span class="glyphicon glyphicon-ok">Số lượng : @item.Quantity</span> Size:XL</small></button>
+                                }
+                            }
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+
+
+}
+
+
+
+
+

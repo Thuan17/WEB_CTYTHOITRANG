@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_ProductCategory>
+@{
+    Layout = null;
+}
+@if (Model != null && Model.Any())
+{
+    <ul class="sidebar_categories   sub-menu">
+        @foreach (var item in Model)
+        {
+            if (ViewBag.id == item.ProductCategoryId)
+            {
+                <li class=""><a href="/Product/ProductCategory/@item.ProductCategoryId"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>@item.Title</a></li>
+            }
+            else
+            {
+                <li><a href="/Product/ProductCategory/@item.ProductCategoryId">@item.Title</a></li>
+            }
+        }
+    </ul>
+}
+else
+{
+
+
+}

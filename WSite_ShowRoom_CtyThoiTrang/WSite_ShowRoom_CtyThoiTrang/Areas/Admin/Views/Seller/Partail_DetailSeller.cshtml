@@ -1,0 +1,38 @@
+﻿@model IEnumerable<WSite_ShowRoom_CtyThoiTrang.Models.tb_SellerDetail>
+@if (Model != null && Model.Any())
+{
+    int i = 1;
+    <table class="table mb-0">
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="SelectAll" /></th>
+                <th class="text-center">STT</th>
+                <th class="border-gray-200 text-center" scope="col">Tên sản phẩm</th>
+                <th class="border-gray-200 text-center" scope="col">Giá</th>
+                <th class="border-gray-200 text-center" scope="col">Số lượng</th>
+                <th class="border-gray-200 text-center" scope="col">Tổng tiền</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr id="trow_@item.Id">
+                    <td><input type="checkbox" class="cbkItem" value="@item.Id "data-id="@item.Id" /></td>
+                    <td class="text-center">@i</td>
+                    <td class="text-center">@item.tb_ProductDetai.tb_Products.Title</td>
+                    <td class="text-center">@WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(item.Price)</td>
+                    <td class="text-center">@item.Quantity</td>
+                    <td class="text-center">@WSite_ShowRoom_CtyThoiTrang.Common.Common.FormatNumber(item.Price * item.Quantity, 0)</td>
+
+                </tr>
+                i++;
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Không có bảng ghi nào !</p>
+}

@@ -1,0 +1,117 @@
+﻿@model  WSite_ShowRoom_CtyThoiTrang.Models.tb_KhachHang
+@{
+    ViewBag.Title = "Chi tiết khách hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section naviheader{
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin/category" class="nav-link">@ViewBag.Title</a>
+        </li>
+    </ul>
+}
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Quản lý khách hàng</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="">Home</a></li>
+                    <li class="breadcrumb-item active">@ViewBag.Title</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+
+    <div class="container-xl px-4 mt-4 ">
+
+        <hr class="mt-0 mb-4">
+        <div class="row">
+
+            <div class="col-xl-4">
+                @if (Model.Clock == true)
+                {
+                    <h4 class="text-danger">Tài khoản đã khóa</h4>
+                }
+                <!-- Profile picture card-->
+                <div class="card mb-4 mb-xl-0">
+                    <div class="card-header">Profile Picture</div>
+                    <div class="card-body text-center">
+                        <!-- Profile picture image-->
+                        <img class="img-account-profile rounded-circle mb-2 w-25" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                        <!-- Profile picture help block-->
+                        <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
+                        <!-- Profile picture upload button-->
+                        <button class="btn btn-primary" type="button">Upload new image</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8">
+              
+    
+                <div class="card mb-4">
+                    <div class="card-header">Chi tiết hồ sơ</div>
+                    <div class="card-body">
+                       
+                            <form>
+                                <!-- Form Group (username)-->
+                                <div class="mb-3">
+                                    <label class="small mb-1" for="inputUsername">Tên :</label>
+                                    <span>@Model.TenKhachHang</span>
+                                </div>
+
+                                <!-- Form Row        -->
+                                <div class="row gx-3 mb-3">
+                                    <!-- Form Group (organization name)-->
+                                    <div class="col-md-6">
+                                        <label class="small mb-1" for="inputOrgName">Số lần mua :</label>
+                                        <span>@Model.SoLanMua</span>
+                                    </div>
+                                    <!-- Form Group (location)-->
+                                    <div class="col-md-6">
+                                        <label class="small mb-1" for="inputLocation">Địa chỉ :</label>
+                                        <span>@Model.DiaChi</span>
+                                    </div>
+                                </div>
+                                <div class="row gx-3 mb-3">
+                                    <!-- Form Group (organization name)-->
+                                    <div class="col-md-6">
+                                        <label class="small mb-1" for="inputEmailAddress">Email : </label>
+                                        <span>@Model.Email</span>
+                                    </div>
+                                    <!-- Form Group (location)-->
+                                    <div class="col-md-6">
+                                        <label class="small mb-1" for="inputPhone">Số điện thoại :</label>
+                                        <span>@Model.SDT</span>
+                                    </div>
+                                </div>
+                                <!-- Form Group (email address)-->
+                                <hr />
+
+                            </form>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
